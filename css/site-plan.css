@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
 
 :root {
     --primary-color: #396E94;
@@ -6,7 +7,7 @@
     --accent1-color: #A43312;
     --accent2-color: white;
     --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif
+    --paragraph-font:'Manrope', sans-serif;
 }
 
 html {
