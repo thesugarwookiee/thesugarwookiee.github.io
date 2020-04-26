@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Noto+Serif&display=swap');
 
 :root {
-    --primary-color: #396E94;
-    --secondary-color: #E7C24F;
-    --accent1-color: #A43312;
-    --accent2-color: white;
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font:'Manrope', sans-serif;
+    --primary-color: #493747;
+    --secondary-color: #DCEED1;
+    --accent1-color: #39524E;
+    --accent2-color: #3D4A3D;
+    --heading-font: 'Manrope', sans-serif;
+    --paragraph-font: 'Noto Serif', serif;
 }
 
 html {
-    background-color: var(--primary-color)
+    background-color: var(--accent2-color)
 }
 
 body {
     max-width: 900px;
     margin: 0 auto;
-    background-color: white;
+    background-color: var(--secondary-color);
     padding: 1em
 }
 
@@ -32,23 +31,23 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
-    color:
+    color: var(--accent1-color);
 }
 
 header {
     padding: 1em;
     text-align: center;
-    color: var(--accent2-color);
-    background-color:
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
 }
 
 header>h1 {
-    color:
+    color: var(--secondary-color);
 }
 
 p {
     font-family: var(--paragraph-font);
-    color: ;
+    color: var(--primary-color);
     padding: 1em
 }
 
@@ -60,7 +59,7 @@ p {
 }
 
 .colors th {
-    background-color: #999
+    background-color: var(--accent1-color)
 }
 
 .colors td {
@@ -85,7 +84,7 @@ p {
 }
 
 nav {
-    background-color: ;
+    background-color: var(--accent1-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
@@ -103,10 +102,10 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color:
+    color: var(--secondary-color);
 }
 
 nav a:hover {
-    color: ;
-    background-color:
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
