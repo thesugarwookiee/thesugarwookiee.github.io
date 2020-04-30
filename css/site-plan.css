@@ -38,7 +38,7 @@ header {
     padding: 1em;
     text-align: center;
     color: var(--secondary-color);
-    background-color: var(--accent2-color);
+    background-color: var(--primary-color);
 }
 
 header>h1 {
