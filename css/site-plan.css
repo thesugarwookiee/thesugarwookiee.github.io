@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Noto+Serif&display=swap');
 
 :root {
-    --primary-color: #493747;
-    --secondary-color: #DCEED1;
-    --accent1-color: #39524E;
-    --accent2-color: #3D4A3D;
+    --primary-color: #13315e;
+    --secondary-color: #faf7fc;
+    --accent1-color: #92104c;
+    --accent2-color: #5863f8;
     --heading-font: 'Manrope', sans-serif;
     --paragraph-font: 'Noto Serif', serif;
 }
@@ -59,7 +59,7 @@ p {
 }
 
 .colors th {
-    background-color: var(--accent1-color)
+    background-color: var(--accent2-color)
 }
 
 .colors td {
