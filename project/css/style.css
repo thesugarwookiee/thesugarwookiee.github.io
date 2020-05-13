@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Noto+Serif&display=swap');
+
+:root {
+    --primary-color: #13315e;
+    --secondary-color: #faf7fc;
+    --accent1-color: #92104c;
+    --accent2-color: #5863f8;
+    --heading-font: 'Manrope', sans-serif;
+    --paragraph-font: 'Noto Serif', serif;
+}
+
+html {
+    background-color: var(--accent2-color)
+}
+
+header,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    padding: 1em;
+}
+
+header {
+    text-align: left;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+.footer {
+    color: var(--secondary-color);
+}
+
+header>h1 {
+    color: var(--secondary-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    padding: 1em;
+}
+
+a:link, a:visited {
+    color: var(--accent1-color);
+    
+}
+
+nav {
+    background-color: var(--accent1-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px;
+    text-decoration: none;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--secondary-color);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
