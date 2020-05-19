@@ -5,12 +5,16 @@
     --secondary-color: #faf7fc;
     --accent1-color: #92104c;
     --accent2-color: #5863f8;
-    --heading-font: 'Manrope', sans-serif;
-    --paragraph-font: 'Noto Serif', serif;
+    --heading-font: 'Manrope', 'Helvetica', sans-serif;
+    --paragraph-font: 'Noto Serif', 'Times New Roman', serif;
 }
 
 html {
     background-color: var(--accent2-color)
+}
+
+body {
+    font-size: 16px;
 }
 
 header,
@@ -24,53 +28,28 @@ main {
     background-color: var(--secondary-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
-    padding: 1em;
-}
-
 header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
     text-align: left;
     color: var(--secondary-color);
     background-color: var(--primary-color);
+    font-family: var(--heading-font);
 }
 
-footer {
-    background-color: var(--primary-color);
-}
-
-.footer {
-    color: var(--secondary-color);
-}
-
-header>h1 {
-    color: var(--secondary-color);
-}
-
-p {
-    font-family: var(--paragraph-font);
-    color: var(--primary-color);
-    padding: 1em;
-}
-
-a:link,
-a:visited {
-    color: var(--accent1-color);
-
+header img {
+    height: 50px;
+    width: auto;
+    padding: 5px 12px;
 }
 
 nav {
-    background-color: var(--accent1-color);
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em;
-
 }
 
 nav>ul {
@@ -91,5 +70,74 @@ nav a:visited {
 
 nav a:hover {
     color: var(--secondary-color);
+    background-color: var(--accent1-color);
+}
+
+.active:hover {
     background-color: var(--primary-color);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    padding: 2px 15px;
+}
+
+main {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    padding-bottom: 5px;
+}
+
+main img {
+    padding: 5px 25px;
+}
+
+.hero {
+    padding: 0px;
+}
+
+p {
+    padding: 2px 25px;
+}
+
+a:link,
+a:visited {
+    color: var(--accent1-color);
+
+}
+
+footer {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    padding-top: 5px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer img {
+    padding: 5px;
+}
+
+.footer {
+    color: var(--secondary-color);
+    padding: 2px 25px;
+}
+
+.tiny {
+    font-size: .7rem;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
 }
