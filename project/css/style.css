@@ -5,12 +5,12 @@
     --secondary-color: #faf7fc;
     --accent1-color: #92104c;
     --accent2-color: #232325;
-    --heading-font: 'Manrope', 'Helvetica', sans-serif;
+    --heading-font: Manrope, Helvetica, sans-serif;
     --paragraph-font: 'Noto Serif', 'Times New Roman', serif;
 }
 
 html {
-    background-color: var(--accent2-color)
+    background-image: linear-gradient(#1e1c2b, #000000);
 }
 
 body {
@@ -47,9 +47,9 @@ header img {
 nav {
     font-family: var(--heading-font);
     background-color: var(--primary-color);
-    line-height: 3em;
+    line-height: 3rem;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 nav>ul {
@@ -71,6 +71,7 @@ nav a:visited {
 nav a:hover {
     color: var(--secondary-color);
     background-color: var(--accent1-color);
+    border-radius: .5rem;
 }
 
 .active:hover {
@@ -124,6 +125,8 @@ footer {
 
 footer img {
     padding: 5px;
+    width: 50px;
+    height: auto;
 }
 
 .footer {
