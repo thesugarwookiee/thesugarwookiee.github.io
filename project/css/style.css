@@ -31,8 +31,6 @@ main {
 header {
     display: flex;
     align-items: center;
-    justify-content: left;
-    text-align: left;
     color: var(--secondary-color);
     background-color: var(--primary-color);
     font-family: var(--heading-font);
@@ -45,11 +43,7 @@ header img {
 }
 
 nav {
-    font-family: var(--heading-font);
-    background-color: var(--primary-color);
-    line-height: 3rem;
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 nav>ul {
@@ -59,7 +53,6 @@ nav>ul {
 
 nav a {
     padding: 1em;
-    min-width: 70px;
     text-decoration: none;
 }
 
