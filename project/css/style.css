@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Noto+Serif&display=swap');
-
 :root {
     --primary-color: #13315e;
     --secondary-color: #faf7fc;
     --accent1-color: #92104c;
     --accent2-color: #232325;
-    --heading-font: Manrope, Helvetica, sans-serif;
+    --heading-font: 'Manrope', Helvetica, sans-serif;
     --paragraph-font: 'Noto Serif', 'Times New Roman', serif;
 }
 

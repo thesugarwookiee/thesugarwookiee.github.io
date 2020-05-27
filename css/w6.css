@@ -7,6 +7,7 @@ body {
 
 /* Activity 1 styles */
 .content1 {
+    width: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -40,13 +41,15 @@ body {
 }
 
 /* Activity 2 styles */
-.content2 {}
+.content2 {
+    width: 600px;
+    height: 300px;
+}
 
 .red2 {
     width: 100px;
     height: 100px;
     background-color: red;
-
 }
 
 .green2 {
@@ -74,11 +77,11 @@ body {
     position: absolute;
     top: 220px;
     left: 175px;
-
 }
 
 /* Activity 3 styles */
 .content3 {
+    width: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1 1 1;
@@ -112,26 +115,24 @@ body {
 
 /* Activity 4 styles */
 .content4 {
+    width: 600px;
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 100px 100px 100px;
 }
 
 .red4 {
-    
     height: 300px;
     background-color: red;
 }
 
 .green4 {
-    
     height: 100px;
     background-color: green;
     grid-column: 2/3;
 }
 
 .gold4 {
-    
     height: 100px;
     background-color: gold;
     grid-column: 2/3;
@@ -144,13 +145,14 @@ body {
 }
 
 /* Activity 5 styles */
-.content5 {}
+.content5 {
+    width: 600px;
+}
 
 .red5 {
     width: 100%;
     height: 100px;
     background-color: red;
-
 }
 
 .green5 {
@@ -167,18 +169,17 @@ body {
     height: auto;
     background-color: gold;
     padding: 1rem;
-
 }
 
 .blue5 {
     width: 100%;
     height: 100px;
     background-color: blue;
-
 }
 
 /* Activity 6 styles */
 .content6 {
+    width: 600px;
     display: grid;
     grid-template-columns: repeat(6, 100px);
     grid-template-rows: repeat(6, 100px);
@@ -216,5 +217,4 @@ body {
     z-index: -1;
     grid-column: 2/6;
     grid-row: 2/6;
-
 }
