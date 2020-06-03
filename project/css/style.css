@@ -74,6 +74,38 @@ nav a:hover {
     padding: 0px;
 }
 
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.banner img {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.action {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgba(240, 240, 240, 0.5);
+    text-align: center;
+    margin: 15px;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+.action button {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    line-height: 2em;
+    width: 8em;
+    background-color: var(--accent1-color);
+    font-size: .75rem;
+    border-radius: .5rem;
+    border: none;
+}
+
 h2,
 h3,
 h4,
@@ -81,7 +113,6 @@ h5,
 h6 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
-    padding: 2px 15px;
     text-align: center;
     font-weight: normal;
 }
@@ -93,7 +124,6 @@ main {
     padding-bottom: 5px;
 }
 
-
 .wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -103,12 +133,13 @@ main {
 
 @media screen and (max-width: 550px) {
     .wrap {
-            display: block;
-        }
+        display: block;
     }
+}
 
 .wrap img {
     box-shadow: 5px 5px 5px #999;
+
 }
 
 #lower {
