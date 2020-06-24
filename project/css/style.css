@@ -104,7 +104,6 @@ nav a:hover {
     font-size: .75rem;
     border-radius: .5rem;
     border: none;
-
 }
 
 h2,
@@ -147,12 +146,15 @@ main {
 }
 
 @media screen and (max-width: 550px) {
-    .wrap, .spotwrap {
+
+    .wrap,
+    .spotwrap {
         display: block;
     }
 }
 
-.wrap img, .spotlight img {
+.wrap img,
+.spotlight img {
     box-shadow: 5px 5px 5px #999;
 
 }
@@ -179,6 +181,43 @@ a:visited {
     color: var(--accent1-color);
 
 }
+
+form {
+    padding-left: 2rem;
+}
+
+input[type=text] {
+    border-radius: .3rem;
+    width: 50%;
+    padding: .3rem;
+    border: 2px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #e1e9ec;
+}
+
+textarea {
+    width: 70%;
+    height: 100px;
+    padding: .3rem;
+    border: 2px solid #ccc;
+    border-radius: .3rem;
+    resize: none;
+}
+
+.formbutton {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    line-height: 2em;
+    width: 8em;
+    background-color: var(--accent1-color);
+    font-size: .75rem;
+    border-radius: .5rem;
+    border: none;
+}
+
 
 footer {
     background-color: var(--primary-color);

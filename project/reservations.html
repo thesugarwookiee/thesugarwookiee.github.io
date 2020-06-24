@@ -25,7 +25,7 @@
         </nav>
     </header>
     <main>
-        <div class="banner"><img src="images/reservhero.png" alt="hero image" class="hero">
+        <div class="banner"><img src="images/reservhero.jpg" alt="hero image" class="hero">
             <div class="action">
                 <p>
                     Claim your space!
@@ -33,7 +33,63 @@
                 <button>Book Now</button>
             </div>
         </div>
-        
+        <div class="wrap">
+            <section>
+                <h2>Reservation Form</h2>
+                <form>
+                    <p><label for="fname">First Name: </label>
+                        <input id="fname" type="text" name="fname"></p>
+                    <p><label for="lname">Last Name: </label>
+                        <input id="lname" type="text" name="lname"></p>
+                    <p> <label for="indate">Checkin Date:</label>
+                        <input type="date" id="indate" name="indate"></p>
+                    </p>
+                    <p> <label for="outdate">Checkout Date:</label>
+                        <input type="date" id="outdate" name="outdate"></p>
+                    </p>
+                    <p><label for="adults">Adult Guests:</label>
+                        <select id="adults" name="adults">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </p>
+                    <p><label for="children">Child Guests:</label>
+                        <select id="children" name="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </p>
+                    <p>Room type:<br> <input type="radio" id="single" name="roomtype" value="single">
+                        <label for="male">Single Queen bed</label><br>
+                        <input type="radio" id="double" name="roomtype" value="double">
+                        <label for="female">Double Queen bed</label><br>
+                        <input type="radio" id="king" name="roomtype" value="king">
+                        <label for="other">King bed</label> </p>
+                    <p><label for="request">Special Requests: </label><textarea id="request" name="request"></textarea>
+                    </p>
+                    <button type="submit" class="formbutton">Submit</button>
+                </form>
+            </section>
+            <section>
+                <h2>Our Promise to You</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rem voluptas distinctio possimus,
+                    tempore molestiae ipsum praesentium ab quos dicta sapiente, provident repellat. Hic, velit dicta
+                    tempora reprehenderit, quas quaerat inventore, aperiam eligendi at iste magni voluptas? Cum maiores
+                    voluptatum qui blanditiis amet veritatis quis illum, dignissimos numquam similique, quibusdam
+                    reprehenderit. Voluptate facere molestiae, quis libero tempora exercitationem sed obcaecati non
+                    ullam doloribus voluptas velit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt officia laudantium mollitia
+                    perspiciatis consectetur exercitationem placeat ad iste at delectus quis obcaecati ullam, veritatis
+                    harum ratione laborum. Nihil saepe repellat iure non!</p>
+            </section>
+        </div>
+
     </main>
     <footer>
         <div class="contact">
