@@ -3,8 +3,8 @@
     --secondary-color: #ebe8c5;
     --accent1-color: #161106;
     --accent2-color: #dfb017;
-    --heading-font:  sans-serif;
-    --paragraph-font:  serif;
+    --heading-font: 'Alice', 'Times New Roman', serif;
+    --paragraph-font: 'Lato', Helvetica, sans-serif;
 }
 
 html {
