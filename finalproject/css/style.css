@@ -1,6 +1,6 @@
 :root {
     --primary-color: #440a0a;
-    --secondary-color: #ebe8c5;
+    --secondary-color: #f5f3de;
     --accent1-color: #161106;
     --accent2-color: #dfb017;
     --heading-font: 'Alice', 'Times New Roman', serif;
@@ -37,6 +37,10 @@ header>h1 {
     color: var(--secondary-color);
 }
 
+.logo { 
+    border-radius: 20px;
+}
+
 p {
     font-family: var(--paragraph-font);
     color: var(--primary-color);
@@ -49,6 +53,7 @@ main {
     background-color: var(--secondary-color);
     padding: 3em;
 }
+
 
 .colors {
     width: 100%;
