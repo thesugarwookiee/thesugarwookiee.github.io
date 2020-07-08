@@ -66,6 +66,7 @@ main {
     margin: 0 auto;
     background-color: var(--secondary-color);
     padding: 3em;
+    padding-bottom: 1em;
 }
 
 nav {
@@ -82,7 +83,7 @@ nav>ul {
 nav a {
     padding: 1.1em 1.5em  1.5em  1.5em;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
 }
 
 nav a:link,
@@ -98,4 +99,29 @@ nav a:hover {
 .active {
     color: var(--secondary-color);
     background-color: var(--primary-color);
+}
+
+footer {
+    margin: 0 auto;
+    padding: 1em 3em;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 10% 3% 3% 3% 1fr;
+}
+
+#facebook {
+    grid-column: 3/4;
+}
+.social img {
+    max-width: 25px;
+}
+
+.tiny {
+    font-size: .75rem;
+    color: var(--secondary-color);
+    padding-left: 13%;
 }
