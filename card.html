@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Card</title>
+    <style>
+        article {
+            margin: 100 auto;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .card {
+            color: rgb(44, 44, 44);
+            width: 320px;
+            border-radius: 3px;
+            box-shadow: 1px 1px 4px 1px #ccc;
+            background-color: white;
+            font-family: Helvetica, sans-serif;
+            overflow: hidden;
+            font-size: 15px;
+        }
+
+        p {
+            padding: 5px 15px;
+        }
+
+        footer {
+            display: block;
+            padding: 5px 15px;
+            color: #888;
+            font-size: .75rem;
+        }
+
+        footer p {
+            float: right;
+        }
+
+        button {
+            border-color: rgb(114, 114, 114);
+            border-style: solid;
+            border-width: 1.5px;
+            font-family: Helvetica, sans-serif;
+            background: white;
+            color: #888;
+            padding: 5px 9px;
+            font-size: .85rem;
+            float: left;
+        }
+
+        .viewButton {
+            border-radius: 3px 0 0 3px;
+        }
+
+        .editButton {
+            border-radius: 0 3px 3px 0;
+            border-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="card">
+        <img src=" https://picsum.photos/350/220" alt="fitted image">
+        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
+            bit longer.</p>
+        <footer>
+            <button class="viewButton">View</button>
+            <button class="editButton">Edit</button>
+            <p>9 min</p>
+        </footer>
+    </article>
+</body>
+
+</html>
