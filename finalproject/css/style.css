@@ -37,7 +37,7 @@ h1 {
     color: var(--secondary-color);
     align-items: end;
     text-align: right;
-    font-size: 4em;
+    font-size: 3.3rem;
     padding-right: 1.5em;
 }
 
@@ -51,21 +51,21 @@ header img {
 
 .logo {
     margin-left: 4em;
-    margin-top: 2em;
+    margin-top: 1em;
     border-radius: 20px;
 }
 
 p {
     font-family: var(--paragraph-font);
     color: var(--primary-color);
-    padding: 1em;
+    padding: 5px 15px;
 }
 
 main {
     max-width: 960px;
     margin: 0 auto;
     background-color: var(--secondary-color);
-    padding: 3em;
+    padding: 2em;
     padding-bottom: 1em;
 }
 
@@ -81,7 +81,7 @@ nav>ul {
 }
 
 nav a {
-    padding: 1.1em 1.5em  1.5em  1.5em;
+    padding: 1.1em 1.5em 1.5em 1.5em;
     text-decoration: none;
     font-size: 1.05rem;
 }
@@ -101,6 +101,11 @@ nav a:hover {
     background-color: var(--primary-color);
 }
 
+.homewrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 footer {
     margin: 0 auto;
     padding: 1em 3em;
@@ -109,19 +114,52 @@ footer {
 }
 
 .social {
-    display: grid;
-    grid-template-columns: 10% 3% 3% 3% 1fr;
+    padding-left: 215px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
 }
 
-#facebook {
-    grid-column: 3/4;
-}
 .social img {
-    max-width: 25px;
+    max-width: 50px;
 }
 
 .tiny {
     font-size: .75rem;
     color: var(--secondary-color);
-    padding-left: 13%;
+    padding-left: 215px;
+}
+
+.card {
+    color: var(--accent2-color);
+    width: 300px;
+    border-radius: 3px;
+    background-color: var(--accent1-color);
+    font-family: Helvetica, sans-serif;
+    overflow: hidden;
+    font-size: 15px;
+    grid-row: 1/4;
+}
+
+button {
+    border-color: var(--accent1-color);
+    border-style: solid;
+    border-width: 1.5px;
+    font-family: Helvetica, sans-serif;
+    background: var(--accent2-color);
+    color: var(--accent1-color);
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: .85rem;
+    float: left;
+}
+
+.contactButton {
+    margin-left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.ticketButton {
+    border-radius: 0 3px 3px 0;
+    border-left: 0;
 }
