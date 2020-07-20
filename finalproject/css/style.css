@@ -172,9 +172,53 @@ button {
 
 .formwrap {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
 }
 
 form {
     background: white;
+    border: 1px solid var(--accent2-color);
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+}
+
+input, select, textarea {
+    border: 1px solid var(--accent2-color);
+    border-radius: .3rem;
+    padding: .3rem;
+    float: right;
+}
+
+.right, .formbutton {
+    float: right;
+}
+
+.formbutton {
+    margin-right: 20px;
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    border-radius: .3rem;
+}
+
+input:focus {
+    background-color: var(--secondary-color);
+}
+
+.form {
+    grid-column: 1/2;
+}
+
+.patron {
+    grid-column: 2/3;
+}
+
+.group {
+    grid-column: 3/4;
+}
+
+#patron {
+    margin-left: 18px;
+    border-radius: .2rem;
+    
 }

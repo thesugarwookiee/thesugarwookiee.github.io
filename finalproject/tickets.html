@@ -28,76 +28,82 @@
     </header>
     <main>
         <div class="formwrap">
-            <section>
-                <section>
-                    <h2>Purchase Form</h2>
-                    <form>
-                        <p><label for="fname">First Name: </label>
-                            <input id="fname" type="text" name="fname"></p>
-                        <p><label for="lname">Last Name: </label>
-                            <input id="lname" type="text" name="lname"></p>
-                            <p><label for="show">Show:</label>
-                                <select id="show" name="show">
-                                    <option value="macbeth">Macbeth</option>
-                                    <option value="cats">Cats</option>
-                                    <option value="symphony">Star Symphony</option>
-                                    <option value="orphan">Little Orphan Annie</option>
-                                    <option value="river">River Dance Company</option>
-                                </select>
-                            </p>
-                        <p> <label for="date">Show Date:</label>
-                            <input type="date" id="date" name="date"></p>
-                        <p><label for="adults">Adult Tickets:</label>
-                            <select id="adults" name="adults">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
-                        </p>
-                        <p><label for="children">Child tickets:</label>
-                            <select id="children" name="children">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
-                        </p>
-                        <p>Section:<br> <input type="radio" id="orchestra" name="section" value="orchestra">
-                            <label for="single">Orchestra</label><br>
-                            <input type="radio" id="mezzanine" name="section" value="mezzanine">
-                            <label for="double">Mezzanine</label><br>
-                            <input type="radio" id="balcony" name="section" value="balcony">
-                            <label for="king">Balcony</label> </p><br>
-                        <button type="submit" class="formbutton">Purchase</button><br>
-                    </form>
+            <section class="form">
+                <h2>Purchase Form</h2>
+                <form>
+                    <p><label for="fname">First Name: </label>
+                        <input id="fname" type="text" name="fname"></p>
+                    <p><label for="lname">Last Name: </label>
+                        <input id="lname" type="text" name="lname"></p>
+                    <p><label for="show">Show:</label>
+                        <select id="show" name="show">
+                            <option value="macbeth">Macbeth</option>
+                            <option value="cats">Cats</option>
+                            <option value="symphony">Star Symphony</option>
+                            <option value="orphan">Little Orphan Annie</option>
+                            <option value="river">River Dance Company</option>
+                        </select>
+                    </p>
+                    <p> <label for="date">Show Date:</label>
+                        <input type="date" id="date" name="date"></p>
+                    <p><label for="adults">Adult Tickets:</label>
+                        <select id="adults" name="adults">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </p>
+                    <p><label for="children">Child tickets:</label>
+                        <select id="children" name="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </p>
+                    <p>Section:<br> <input type="radio" id="orchestra" name="section" value="orchestra">
+                        <label for="single" class="right">Orchestra</label><br>
+                        <input type="radio" id="mezzanine" name="section" value="mezzanine">
+                        <label for="double" class="right">Mezzanine</label><br>
+                        <input type="radio" id="balcony" name="section" value="balcony">
+                        <label for="king" class="right">Balcony</label> </p><br>
+                    <button type="submit" class="formbutton">Purchase</button><br>
+                </form>
             </section>
-            <section>
-                <h2>Wedding Receptions</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores eveniet exercitationem
-                    consectetur eos reiciendis enim eligendi ipsam earum aut nisi nemo reprehenderit excepturi
-                    repudiandae,
-                    magni consequuntur, ab iusto. Voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Exercitationem ipsa magni placeat, architecto sunt eum nostrum ut ipsam deserunt nemo iure autem
-                    explicabo, pariatur, vitae porro at totam eligendi aliquid?</p>
+            <section class="patron">
+                <h2>Patron Program</h2>
+                <p>Want to join our patron program? We'd love to have you. This program makes sure you get to all the
+                    shows you want to get to with first choice of seats. Other perks include backstage access, a sway in
+                    our programs, and monthly merchandise. Check out our Patron page for more information!
+                </p>
+                <picture><img src="images/patron.jpg" alt="patron" id="patron"></picture>
             </section>
-            <section id="lower">
-                <h2>Family Search Center</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deserunt ut atque sapiente non
-                    numquam
-                    illo, rerum eius corrupti recusandae. Voluptatum eos quisquam commodi pariatur molestiae
-                    voluptatibus,
-                    quis distinctio consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-                    molestiae enim expedita labore et suscipit, ad fuga alias fugit dignissimos! Lorem ipsum dolor sit
-                    amet
-                    consectetur adipisicing elit. Minima quae officiis rerum? Cum blanditiis voluptate possimus placeat
-                    quasi quia doloremque illum vitae, consequuntur magnam quae beatae, hic consequatur sint animi
-                    debitis
-                    ea aliquid dolorum, nihil accusamus! Tempora beatae minima rerum quos fugiat sint, facilis sed?
-                    Nobis
-                    animi laudantium recusandae architecto!</p>
+            <section class="group">
+                <h2>Group Purchasing</h2>
+                <p>In need of buying tickets in bulk? If your desires exceed our form limits (10 adults, 8 children),
+                    please contact us directly by phone or by email. If you would us to contact you, please leave your
+                    email and a small note (optional) about your desired group numbers. For certain shows we may be able
+                    to offer group pricing.</p>
+                <form>
+                    <p><label for="email">Email: </label>
+                        <input id="email" type="text" name="email"></p>
+                    <p><label for="comment">Comment: </label><textarea id="comment" name="comment"></textarea>
+                    </p><br><br>
+                    <button type="submit" class="formbutton">Request</button><br>
+                </form>
             </section>
         </div>
     </main>
