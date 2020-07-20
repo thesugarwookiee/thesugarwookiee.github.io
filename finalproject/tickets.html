@@ -27,20 +27,53 @@
         </nav>
     </header>
     <main>
-        <div class="homewrap">
+        <div class="formwrap">
             <section>
-                <h2>Your Home Away From Home</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores eveniet exercitationem
-                    consectetur eos reiciendis enim eligendi ipsam earum aut nisi nemo reprehenderit excepturi
-                    repudiandae,
-                    magni consequuntur, ab iusto. Voluptates? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Et
-                    voluptatibus distinctio recusandae fugiat odio minima provident dolorum laboriosam aspernatur enim?
-                </p>
+                <section>
+                    <h2>Purchase Form</h2>
+                    <form>
+                        <p><label for="fname">First Name: </label>
+                            <input id="fname" type="text" name="fname"></p>
+                        <p><label for="lname">Last Name: </label>
+                            <input id="lname" type="text" name="lname"></p>
+                            <p><label for="show">Show:</label>
+                                <select id="show" name="show">
+                                    <option value="macbeth">Macbeth</option>
+                                    <option value="cats">Cats</option>
+                                    <option value="symphony">Star Symphony</option>
+                                    <option value="orphan">Little Orphan Annie</option>
+                                    <option value="river">River Dance Company</option>
+                                </select>
+                            </p>
+                        <p> <label for="date">Show Date:</label>
+                            <input type="date" id="date" name="date"></p>
+                        <p><label for="adults">Adult Tickets:</label>
+                            <select id="adults" name="adults">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </p>
+                        <p><label for="children">Child tickets:</label>
+                            <select id="children" name="children">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </p>
+                        <p>Section:<br> <input type="radio" id="orchestra" name="section" value="orchestra">
+                            <label for="single">Orchestra</label><br>
+                            <input type="radio" id="mezzanine" name="section" value="mezzanine">
+                            <label for="double">Mezzanine</label><br>
+                            <input type="radio" id="balcony" name="section" value="balcony">
+                            <label for="king">Balcony</label> </p><br>
+                        <button type="submit" class="formbutton">Purchase</button><br>
+                    </form>
             </section>
-            <picture> <img src="images/room.jpg" alt="hotel room"></picture>
-
-            <picture> <img src="images/reception.jpg" alt="reception"></picture>
             <section>
                 <h2>Wedding Receptions</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores eveniet exercitationem

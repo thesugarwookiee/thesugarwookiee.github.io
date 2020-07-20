@@ -169,3 +169,12 @@ button {
     grid-row: 3/4;
    ;
 }
+
+.formwrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+form {
+    background: white;
+}
