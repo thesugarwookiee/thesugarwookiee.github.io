@@ -201,7 +201,7 @@ input, select, textarea {
     border-radius: .3rem;
 }
 
-input:focus {
+input:focus, textarea:focus {
     background-color: var(--secondary-color);
 }
 
@@ -219,6 +219,20 @@ input:focus {
 
 #patron {
     margin-left: 18px;
-    border-radius: .2rem;
-    
+    border-radius: .2rem;   
+}
+
+.schedwrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: .75rem;
+}
+
+.schedwrap p {
+    font-size: .75rem;
+}
+
+.schedwrap img {
+    width: 150px;
+    height: 200px;
 }
