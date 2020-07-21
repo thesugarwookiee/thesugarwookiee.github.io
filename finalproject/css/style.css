@@ -228,11 +228,10 @@ input:focus, textarea:focus {
     grid-gap: .75rem;
 }
 
-.schedwrap p {
-    font-size: .75rem;
-}
-
 .schedwrap img {
     width: 150px;
-    height: 200px;
+}
+
+.schedwrap p {
+    font-size: .75rem;
 }
