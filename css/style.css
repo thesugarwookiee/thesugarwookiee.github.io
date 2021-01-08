@@ -62,4 +62,14 @@ footer {
     color: var(--secondary-color);
     padding: 1rem;
     border-radius: .75rem; 
+    font-size: .75rem;
+}
+
+footer a:link, footer a:visited {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+#update {
+    color: yellow;
 }
