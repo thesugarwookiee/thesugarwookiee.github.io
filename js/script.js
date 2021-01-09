@@ -1,9 +1,15 @@
-window.onload = function getYear() {
-    var date = new Date().getFullYear();
-    document.getElementById("year").innerHTML = date;
+function getYear() {
+    document.getElementById("year").innerHTML = new Date().getFullYear();
 }
 
-window.onload = function modified() {
+function modified() {
     let lastModif = new Date(document.lastModified);
     document.getElementById("mod").innerHTML = lastModif;
 }
+
+function load() {
+    getYear();
+    modified();
+  }
+  
+  window.onload = load;
