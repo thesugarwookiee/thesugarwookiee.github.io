@@ -11,5 +11,5 @@ function load() {
     getYear();
     modified();
   }
-  
-  window.onload = load;
+
+window.onload = load;
