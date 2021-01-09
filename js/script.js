@@ -3,8 +3,8 @@ function getYear() {
 }
 
 function modified() {
-    let lastModif = new Date(document.lastModified);
-    document.getElementById("mod").innerHTML = lastModif;
+    let lastMod = new Date(document.lastModified);
+    document.getElementById("mod").innerHTML = lastMod;
 }
 
 function load() {
