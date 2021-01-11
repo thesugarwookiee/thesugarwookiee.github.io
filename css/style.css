@@ -51,7 +51,6 @@ a:hover, a:visited {
 }
 
 #self {
-    float: right;
     border-radius: .5rem;
     box-shadow: -5px 5px 10px var(--accent1-color);
 }
