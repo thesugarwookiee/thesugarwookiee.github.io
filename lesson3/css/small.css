@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #27135e;
+    --secondary-color: #faf7fc;
+    --accent1-color: #92104c;
+    --accent2-color: #5863f8;
+    --heading-font: 'Lato', sans-serif;
+    --paragraph-font: 'Lato', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    background-color: var(--secondary-color);
+    margin: auto;
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: .75rem; 
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+nav {
+    background-color: var(--accent1-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-flow: column;
+    padding-left: 0px;
+
+}
+
+nav ul a:link {
+    display: block;
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+nav ul a:visited {
+    color: var(--secondary-color);
+}
+
+nav ul a:hover {
+    background-color: var(--accent2-color);
+}
+
+.active {
+    background-color: var(--accent2-color);
+}
+
+h2, h3 {
+    font-family: var(--heading-font);
+    padding: 0rem .5rem;
+}
+
+p {
+    padding: .25rem 1.5rem;
+}
+
+a:link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+    color: var(--accent1-color);
+}
+
+.responsive {
+    max-width: 100%;
+  height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: .75rem; 
+    font-size: .75rem;
+}
+
+footer a:link, footer a:visited {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
