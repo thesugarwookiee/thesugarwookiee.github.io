@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typography | Weather Site Plan</title>
-    <meta name="description" content="Webpage that lays out the intended design for another site, including typography.">
+    <meta
+      name="description"
+      content="Webpage that lays out the intended design for another site, including typography."
+    />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header><h1>Typography</h1></header>
     <nav>
-        <ul>
-          <li><a href="index.html">Overview</a></li>
-          <li><a href="target-audience.html">Target Audience</a></li>
-          <li><a href="color-scheme.html">Color Scheme</a></li>
-          <li><a class="active" href="#">Typography</a></li>
-        </ul>
-      </nav>
-    <main></main>
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="target-audience.html">Target Audience</a></li>
+        <li><a href="color-scheme.html">Color Scheme</a></li>
+        <li><a class="active" href="#">Typography</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Header Font</h2>
+      <p>
+        Work San - A sans-serif font with just enough character in its letters
+        to work well as a header. It is very readable, especially at larger
+        values, but has enough variation to be distinct. On a professional,
+        information site, san-serif is great for the web.
+      </p>
+      <h1 class="work">Site Header h1</h1>
+      <h2 class="work">Section Header h2</h2>
+      <h3 class="work">Sub Header h3</h3>
+      <h2>Body Font</h2>
+      <p>
+        Roboto - A sans-serif font that isn't too flashy in any way. Can be read
+        in smaller sizes with ease and pairs well with a slightly bolder header.
+        Clean and professional without feeling too generic. Good for body font
+        as well as navigation points.
+      </p>
+      <p class="robo">Body Text</p>
+      <div class="robo" id="nav">Navigation</div>
+      <div class="robo" id="foot">Footer Text</div>
+    </main>
     <footer>
-        <p>
-          &copy; <span id="year"></span> Sierra Angell | Hawaii |
-          <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-        </p>
-      </footer>
+      <p>
+        &copy; <span id="year"></span> Sierra Angell | Hawaii |
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      </p>
+    </footer>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

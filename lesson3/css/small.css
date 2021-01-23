@@ -76,6 +76,9 @@ a:hover, a:visited {
     color: var(--accent1-color);
 }
 
+.persona {
+    padding: 1.5rem;
+}
 .responsive {
     max-width: 100%;
   height: auto;
@@ -93,4 +96,24 @@ footer {
 footer a:link, footer a:visited {
     color: var(--secondary-color);
     text-decoration: underline;
+}
+
+.work {
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 4rem;
+}
+
+.robo {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 4rem;
+}
+
+#nav {
+    font-size: .9rem;
+    padding-bottom: .75rem;
+}
+
+#foot {
+    font-size: .75rem;
+    padding-bottom: .75rem;
 }
