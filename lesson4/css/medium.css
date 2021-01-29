@@ -1,11 +1,10 @@
 @media only screen and (min-width: 650px) {
   nav ul {
     flex-flow: row;
-    padding-left: 2.5rem;
 }
 
 .icon {
-  max-width: 200px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -15,5 +14,20 @@
 
 .motto {
   font-size: 1rem;
+  padding-top: 0;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  display: block;
+}
+
+.navigation li:first-child {
+  display: none;
 }
   }
+
+  

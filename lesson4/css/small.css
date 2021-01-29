@@ -31,7 +31,7 @@ header {
 }
 
 .heading h1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 	margin: 0 0 0 15px;
 }
 
@@ -88,18 +88,12 @@ a:hover, a:visited {
     color: var(--accent1-color);
 }
 
-
-.responsive {
-    max-width: 100%;
-  height: auto;
-}
-
 footer {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 1rem;
-    font-size: .75rem;
+    font-size: .85rem;
 }
 
 footer a:link, footer a:visited {
@@ -108,7 +102,7 @@ footer a:link, footer a:visited {
 }
 
 .icon {
-    width: 100px;
+    max-width: 50%;
     height: auto;
     padding: .5rem;
 }
@@ -118,7 +112,29 @@ img {
 }
 
 .motto {
+    padding-top: .75rem;
     font-style: italic;
-    font-size: .75rem;
-    margin: 0 0 0 20px;
+    font-size: .85rem;
+    margin: 0 0 0 15px;
+}
+
+.holder {
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--accent3-color);
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+
+.responsive li {
+	display: block;
 }
