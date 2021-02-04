@@ -1,0 +1,35 @@
+@media only screen and (min-width: 650px) {
+  nav ul {
+    flex-flow: row;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.heading h1 {
+  font-size: 2rem;
+}
+
+.motto {
+  font-size: 1rem;
+  padding-top: 0;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  display: block;
+}
+
+.navigation li:first-child {
+  display: none;
+}
+  }
+
+  
