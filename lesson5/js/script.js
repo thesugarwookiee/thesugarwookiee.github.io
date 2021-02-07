@@ -10,7 +10,17 @@ document.getElementById("date").innerHTML = day[current.getDay()] +
 
 const toggle = document.querySelector('.toggle');
 const nav = document.querySelector('.navigation')
-    
-toggle.addEventListener('click', () => {nav.classList.toggle('responsive')}, false);
-    
-window.onresize = () => {if (window.innerWidth > 650) nav.classList.remove('responsive')};
+
+toggle.addEventListener('click', () => {
+    nav.classList.toggle('responsive')
+}, false);
+
+window.onresize = () => {
+    if (window.innerWidth > 650) nav.classList.remove('responsive')
+};
+
+
+
+if (current.getDay() == 5) {
+    document.getElementById("event").style.display = "block";
+}
