@@ -19,10 +19,13 @@
 
 <body>
     <div id="event">
-        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        <p>
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+            park pavilion.
+        </p>
     </div>
     <header>
-        <img src="images/wicon.png" class="icon" alt="sun behind cloud with lightning logo">
+        <img src="images/wicon.png" class="icon" alt="sun behind cloud with lightning logo" />
         <section class="heading">
             <h1>The Weather Loop</h1>
             <div class="motto">Keeping you constantly in the loop!</div>
@@ -41,80 +44,102 @@
     </nav>
     <main>
         <h2>Preston, Idaho</h2>
-        <div class="herow"><img src="images/preshero.jpg" class="responsive" alt="two rainbows over a field">
+        <!-- <div class="herow"><img src="images/preshero.jpg" class="responsive" alt="two rainbows over a field"> -->
+        <div class="herow">
+            <picture>
+                <source srcset="images/hero650.jpg" media="(max-width:650px)" />
+                <source srcset="images/hero850.jpg" media="(max-width:850px)" />
+                <source srcset="images/hero875.jpg" media="(max-width:875px)" />
+                <img class="responsive" src="images/hero875.jpg" alt="picture of a field and sky" />
+            </picture>
             <div class="summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: Sunny<br>
-                    Temperature: <span id="temp">45</span>&deg;F<br>
-                    Wind Chill: <span id="wind"></span><br>
-                    Humidity: 45%<br>
+                <p>
+                    Currently: Sunny<br />
+                    Temperature: <span id="temp">45</span>&deg;F<br />
+                    Wind Chill: <span id="wind"></span><br />
+                    Humidity: 45%<br />
                     Wind Speed: <span id="speed">15</span> MPH
                 </p>
             </div>
         </div>
-        <div class="forecast"><h3>5 Day Forecast</h3>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
             <div class="fiveday">
                 <div class="tile">
                     <p class="day">Wed</p>
-                    <img src="images/sunny.ico" class="daycon" alt="sun">
+                    <img src="images/sunny.ico" class="daycon" alt="sun" />
                     <p class="temp">66&deg;F</p>
                 </div>
                 <div class="tile">
                     <p class="day">Thur</p>
-                    <img src="images/sunny.ico" class="daycon" alt="sun">
+                    <img src="images/sunny.ico" class="daycon" alt="sun" />
                     <p class="temp">67&deg;F</p>
                 </div>
                 <div class="tile">
                     <p class="day">Fri</p>
-                    <img src="images/sunny.ico" class="daycon" alt="sun">
+                    <img src="images/sunny.ico" class="daycon" alt="sun" />
                     <p class="temp">75&deg;F</p>
                 </div>
                 <div class="tile">
                     <p class="day">Sat</p>
-                    <img src="images/sunny.ico" class="daycon" alt="sun">
+                    <img src="images/sunny.ico" class="daycon" alt="sun" />
                     <p class="temp">74&deg;F</p>
                 </div>
                 <div class="tile">
                     <p class="day">Sun</p>
-                    <img src="images/sunny.ico" class="daycon" alt="sun">
+                    <img src="images/sunny.ico" class="daycon" alt="sun" />
                     <p class="temp">80&deg;F</p>
                 </div>
             </div>
         </div>
         <div class="article">
-            <h3>Article Title</h3>
-            <img src="images/park.jpg" class="artpic" alt="white bench in green park">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti mollitia culpa, corporis repellat
-                officia itaque nulla, sint ab doloribus quod eos laboriosam maxime iste tempore at, dicta natus
-                distinctio! Rerum illum hodit am aspernatur ipsa
-                necessitatibus, laboriosam iste quam. At corporis est assumenda nobis ut, in eligendi illum libero totam
-                accusamus sit? Non perspiciatis impedit ratione voluptates adipisci ducimus minus, reprehenderit
-                pariatur obcaecati quidem molestias soluta repudiandae tempora nobis, cum rerum. Reprehenderit
-                cupiditate incidunt nullaficiis expedita ipsa inventore!</p>
+            <h3 class="title">Article Title</h3>
+            <img src="images/park.jpg" class="artpic" alt="white bench in green park" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+                mollitia culpa, corporis repellat officia itaque nulla, sint ab
+                doloribus quod eos laboriosam maxime iste tempore at, dicta natus
+                distinctio! Rerum illum hodit am aspernatur ipsa necessitatibus,
+                laboriosam iste quam. At corporis est assumenda nobis ut, in eligendi
+                illum libero totam accusamus sit? Non perspiciatis impedit ratione
+                voluptates adipisci ducimus minus, reprehenderit pariatur obcaecati
+                quidem molestias soluta repudiandae tempora nobis, cum rerum.
+                Reprehenderit cupiditate incidunt nullaficiis expedita ipsa inventore!
+            </p>
 
-            <p>Neque excepturi, sint reprehenderit consectetur reiciendis, sequi nostrum earum voluptates ipsum illo
-                ut. Ea, delectus expedita alias omnis voluptatibus, impedit adipisci quidem dolores et nulla inventore
-                excepturi? Rerum possimus, molestiae animi saepe sapiente maxime optio officiis reiciendis quasi quam,
-                perspiciatis officia quod, fugit facilis doloremque corporis. Saepe consequuntur, quidem enim eum illum
-                vel earum neque. Iure illlum voluptates. Doloribus rem voluptatum quos quaerat,
-                aut placeat quia ratione amet veritatis, sequi id aliquam aliquid impedit animi sed est
-                voluptates sit unde. Sed rerum id voluptatibus error, facere enim dolorem commodi quasi cum consequatur
-                vero officiis inventore alias optio, maiores modi delectus est explicabo architecto iure perferendis ut!
-                Inventore corrupti laudantium sit quos ducimus nulla, facere asperiores.</p>
+            <p>
+                Neque excepturi, sint reprehenderit consectetur reiciendis, sequi
+                nostrum earum voluptates ipsum illo ut. Ea, delectus expedita alias
+                omnis voluptatibus, impedit adipisci quidem dolores et nulla inventore
+                excepturi? Rerum possimus, molestiae animi saepe sapiente maxime optio
+                officiis reiciendis quasi quam, perspiciatis officia quod, fugit
+                facilis doloremque corporis. Saepe consequuntur, quidem enim eum illum
+                vel earum neque. Iure illlum voluptates. Doloribus rem voluptatum quos
+                quaerat, aut placeat quia ratione amet veritatis, sequi id aliquam
+                aliquid impedit animi sed est voluptates sit unde. Sed rerum id
+                voluptatibus error, facere enim dolorem commodi quasi cum consequatur
+                vero officiis inventore alias optio, maiores modi delectus est
+                explicabo architecto iure perferendis ut! Inventore corrupti
+                laudantium sit quos ducimus nulla, facere asperiores.
+            </p>
         </div>
         <div class="contact">
-            <img src="images/prestonmap.jpg" class="map" alt="map of preston idaho">
+            <img src="images/prestonmap.jpg" class="map" alt="map of preston idaho" />
             <div>
                 <h3>Contact Information</h3>
-                <p>◉ 21 Random Street<br>
-                    Preston, ID<br>
-                    <br>
-                    ☏ (208) 555-5555<br>
-                    ✉ loop@theweatherloop.com</p>
-                    <div class="social"><img src="images/facebook.png" alt="facebook logo">
-                        <img src="images/instagram.png" alt="instagram logo">
-                        <img src="images/twitter.png" alt="twitter logo">
-                    </div>
+                <p>
+                    ◉ 21 Random Street<br />
+                    Preston, ID<br />
+                    <br />
+                    ☏ (208) 555-5555<br />
+                    ✉ loop@theweatherloop.com
+                </p>
+                <div class="social">
+                    <img src="images/facebook.png" alt="facebook logo" />
+                    <img src="images/instagram.png" alt="instagram logo" />
+                    <img src="images/twitter.png" alt="twitter logo" />
+                </div>
             </div>
         </div>
     </main>
@@ -124,13 +149,13 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>WebFont.load({
-      google: {
-        families: [
-           'Work Sans', 'Roboto'
-        ]
-      }
-    });</script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Work Sans", "Roboto"],
+            },
+        });
+    </script>
 </body>
 
 </html>

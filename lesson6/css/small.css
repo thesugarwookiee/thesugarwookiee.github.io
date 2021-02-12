@@ -85,7 +85,7 @@ h4 {
     font-family: var(--heading-font);
 }
 
-h3 {
+.title {
     color: var(--accent1-color);
 }
 
