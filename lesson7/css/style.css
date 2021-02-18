@@ -1,8 +1,6 @@
 :root {
     --primary-color: #080b36;
     --secondary-color: #faf7fc;
-    --accent1-color: #ca3a21;
-    --accent2-color: #f6d648;
     --accent3-color: #9ec6e4;
     --heading-font: 'Work Sans', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
@@ -36,11 +34,13 @@ main {
     background-color: var(--secondary-color);
 }
 
-img[data-src] {
-    filter: blur(0.2em);
-  }
-  
 img {
-    filter: blur(0em);
-    transition: filter 0.5s;
-  }
+	width: 100%;
+	height:	auto;
+	filter: blur(0em);
+	transition: filter 0.6s;
+}
+
+img[data-src] {
+	filter: blur(0.4em);
+}
