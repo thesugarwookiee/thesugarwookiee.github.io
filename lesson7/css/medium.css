@@ -1,0 +1,75 @@
+@media only screen and (min-width: 650px) {
+  nav ul {
+    flex-flow: row;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .icon {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .motto {
+    font-size: 1rem;
+    padding-top: 0;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  #event {
+    font-size: 1.5rem;
+  }
+
+  .herow {
+    position: relative;
+  }
+
+  .summary {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    opacity: .85;
+    box-shadow: 0 0 20px #111;
+    padding: .4rem .8rem;
+  }
+
+  .forecast {
+    display: block;
+  }
+
+  .artpic {
+    float: right;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .map {
+    display: block;
+  }
+
+  .fiveday {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 570px;
+    margin: 0 auto;
+  }
+
+}

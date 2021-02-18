@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Page thatd demonstrates the lazy loading of pictures on the internet for improved loading experience." />
+    <title>Progressive Loading of Images</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Progressive Loading of Images</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="images/holder.jpg" data-src="images/lazycat.jpg" alt="an orange and white cat taking a nap" />
+        </picture>
+        <picture>
+            <img src="images/holder.jpg" data-src="images/lazydog.jpg" alt="a brown and white dog sleeping in the sun in bed" />
+        </picture>
+        <picture>
+            <img src="images/holder.jpg" data-src="images/lazykoala.jpg" alt="koala in a tree having a nap" />
+        </picture>
+        <picture>
+            <img src="images/holder.jpg" data-src="images/lazylion.jpg" alt="lioness resting on a tree trunk" />
+        </picture>
+        <picture>
+            <img src="images/holder.jpg" data-src="images/lazypanda.jpg" alt="red panda sleeping among branches" />
+        </picture>
+        <picture>
+            <img src="images/holder.jpg" data-src="images/lazysloth.jpg" alt="sloth in a basket doing a big yawn" />
+        </picture>
+    </main>
+    <footer><p>Thanks for looking :)</p></footer>
+    <script src="js/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Work Sans", "Roboto"],
+            },
+        });
+    </script>
+</body>
+
+</html>

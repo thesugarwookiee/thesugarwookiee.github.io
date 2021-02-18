@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #080b36;
+    --secondary-color: #faf7fc;
+    --accent1-color: #ca3a21;
+    --accent2-color: #f6d648;
+    --accent3-color: #9ec6e4;
+    --heading-font: 'Work Sans', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--paragraph-font);
+}
+
+header, footer {
+    color: var(--primary-color);
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    background-color: var(--accent3-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    padding: 1rem;
+}
+
+main {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
