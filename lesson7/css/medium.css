@@ -42,7 +42,7 @@
   .summary {
     position: absolute;
     top: 20px;
-    right: 25px;
+    left: 25px;
     opacity: .85;
     box-shadow: 0 0 20px #111;
     padding: .4rem .8rem;
@@ -71,5 +71,9 @@
     max-width: 570px;
     margin: 0 auto;
   }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+}
 
 }

@@ -216,3 +216,16 @@ img {
     text-align: center;
     padding: .5rem;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.galleryitem {
+    margin: 0;
+    padding: 15px;
+}
