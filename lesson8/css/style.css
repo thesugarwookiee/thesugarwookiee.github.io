@@ -1,17 +1,17 @@
 table {
     font-family: 'Ubuntu', sans-serif;
     margin: 0 auto;
-    box-shadow: 10px 10px 15px #628ca6;
     text-align: center;
-    margin-top: 20px;
     border-collapse: collapse;
+    box-shadow: 10px 10px 15px #628ca6;
+    margin-top: 30px;
 }
 
 thead th,
 tfoot td {
-    color: black;
     background-color: #7fb9c2;
-    padding: 10px;
+    color: black;
+    padding: 12px;
 }
 
 thead th {
@@ -34,7 +34,7 @@ table,
 th,
 td {
     border: 1px solid #aaa;
-    padding: 10px;
+    padding: 12px;
 }
 
 th,
@@ -44,5 +44,5 @@ th,
 }
 
 tfoot {
-    font-size: 14px;
+    font-size: .8rem;
 }
