@@ -39,3 +39,8 @@ if ((tmp > 50) || (spd < 3)) {
 } else {
     document.getElementById("wind").innerHTML = chill + "&deg;F";
 }
+
+//show the level of the storm range severity
+function adjustNumber(stormseverity) {
+    document.getElementById("stormvalue").innerHTML = stormseverity;
+}

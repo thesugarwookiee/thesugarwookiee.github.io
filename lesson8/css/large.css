@@ -27,4 +27,15 @@
     box-shadow: 0 0 40px #444;
   }
 
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: start;
+  }
+
+  .stormButton {
+    grid-column: 2 / 3;
+    justify-self: right;
+  }
 }
