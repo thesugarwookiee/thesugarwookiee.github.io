@@ -42,19 +42,19 @@
             <form method="get" action="thanks.html">
                 <fieldset>
                     <legend>Personal</legend>
-                    <label><span class="word">Full Name</span><input type="text" name="fullname" pattern="[\sa-zA-Z]{5,}"
+                    <label>Full Name<input type="text" name="fullname" pattern="[\sa-zA-Z]{5,}"
                             placeholder="First Last" class="input" required></label>
-                    <label><span class="word">Email</span><input type="email" name="email" placeholder="email@demo.com"
+                    <label>Email<input type="email" name="email" placeholder="email@demo.com"
                             class="input"></label>
-                    <label><span class="word">Phone Number</span><input type="tel" name="phone" placeholder="555 555 5555"
+                    <label>Phone Number<input type="tel" name="phone" placeholder="555 555 5555"
                             class="input" required></label>
-                    <label><span class="word">Zip Code</span><input type="number" name="zipcode" placeholder="54321"
+                    <label>Zip Code<input type="number" name="zipcode" placeholder="54321"
                             class="input" required></label>
                 </fieldset>
                 <fieldset>
-                    <legend><div class="word fix">Storm Report</span></legend>
-                    <label><span class="word">Storm Date</span><input type="date" name="stormdate"></label>
-                    <label><span class="word">Storm Type</span><input list="stormlist" name="stormtype"
+                    <legend>Storm Report</legend>
+                    <label>Storm Date<br><input type="date" name="stormdate"></label>
+                    <label>Storm Type<input list="stormlist" name="stormtype"
                             placeholder="Type of Storm" class="input"></label>
                     <datalist id="stormlist">
                         <option value="Flash Flood"></option>
@@ -63,12 +63,12 @@
                         <option value="Thunderstorm"></option>
                         <option value="Tornado"></option>
                     </datalist>
-                    <label for="stormseverity"><span class="word">Storm Severity:</span>
+                    <label for="stormseverity">Storm Severity:
                         <input type="range" class="slider" id="stormseverity" value="5" min="1" max="10" step="1"
                             oninput="adjustNumber(this.value)" onchange="adjustNumber(this.value)"><br>
                         <span id="stormvalue">5</span>
                     </label>
-                    <label><span class="word">Storm Region</span>
+                    <label>Storm Region
                         <select name="stormregion" class="input">
                             <option disabled selected>Select Region...</option>
                             <option value="preston">Preston</option>
@@ -76,11 +76,11 @@
                             <option value="fishhaven">Fish Haven</option>
                         </select>
                     </label>
-                    <label><span class="word">Are you in danger?</span></label>
+                    <label>Are you in danger?</label>
                     <label class="radio"><input type="radio" name="danger" value="yes"> Yes</label>
                     <label class="radio"><input type="radio" name="danger" value="maybe"> Maybe</label>
                     <label class="radio"><input type="radio" name="danger" value="no"> No</label>
-                    <label><span class="word">Additional Information</span><textarea type="textarea" name="information"
+                    <label>Additional Information<textarea type="textarea" name="information"
                             placeholder="What else can you tell us?" class="input"></textarea></label>
                 </fieldset>
                 <input type="submit" value="Report!" class="stormButton">

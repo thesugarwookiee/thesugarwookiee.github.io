@@ -254,14 +254,7 @@ form label {
     display: block;
     padding-bottom: 5px;
     padding: 10px;
-}
-
-.word {
-    padding: .5rem 0;
-}
-
-.fix {
-    padding: 0;
+    line-height: 2rem;
 }
 
 .slider {
