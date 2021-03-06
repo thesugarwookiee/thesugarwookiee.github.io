@@ -17,7 +17,7 @@ fetch(requestURL)
 
     for (let i = 0; i < singleCity.length; i++) {
       let place = document.createElement('section');
-      let cityInfo = document.createElement('dl');
+      let cityInfo = document.createElement('div');
       cityInfo.setAttribute('class', 'cityInfo');
       let photo = document.createElement('img');
       let name = document.createElement('h3');

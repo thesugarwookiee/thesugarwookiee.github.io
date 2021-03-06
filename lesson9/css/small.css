@@ -335,3 +335,18 @@ input[type="submit"] {
 .thankyou {
     font-size: 1.3rem;
 }
+
+.cities section {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding-top: 5px;
+}
+
+.cities h4 {
+    font-size: .7rem;
+    font-family: var(--paragraph-font);
+}
+
+.cities h2 {
+    padding: 0;
+}

@@ -38,4 +38,18 @@
     grid-column: 2 / 3;
     justify-self: right;
   }
+
+  .cities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    grid-gap: 15px;
+  }
+
+  .cities section {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+  }
 }

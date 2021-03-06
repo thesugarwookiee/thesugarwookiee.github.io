@@ -76,4 +76,12 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.cards section {
+  display: grid;
+  width: 560px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0;
+}
+
 }
