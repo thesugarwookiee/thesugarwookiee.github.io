@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preston | The Weather Loop</title>
+    <title>Home | The Weather Loop</title>
     <meta name="description"
-        content="Site dedicated to up to date weather information for the city of Preston, Idaho." />
+        content="Site dedicated to up to weather and information about the greater Preston, Idaho area." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -14,6 +14,12 @@
 </head>
 
 <body>
+    <div id="event">
+        <p>
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+            park pavilion.
+        </p>
+    </div>
     <header>
         <img src="images/wicon.png" class="icon" alt="sun behind cloud with lightning logo" />
         <section class="heading">
@@ -24,7 +30,7 @@
     <nav>
         <ul class="navigation">
             <li><a class="toggle" href="#">☰ Menu</a></li>
-            <li><a href="./">Home</a></li>
+            <li><a class="active" href="#">Home</a></li>
             <li><a href="preston-7.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
@@ -33,12 +39,35 @@
         </ul>
     </nav>
     <main>
-        <p class="thankyou">Thank you for your report! Use the navigation to return to the site.</p>
+        <h2>The Weather Loop</h2>
+        <div class="herow"><img src="images/preshero.jpg" class="responsive" alt="two rainbows over a field">
+        </div>
+        <div class="cities"></div>
+        <div class="contact">
+            <img src="images/prestonmap.jpg" class="map" alt="map of preston idaho" />
+            <div>
+                <h3>Contact Information</h3>
+                <p>
+                    ◉ 21 Random Street<br />
+                    Preston, ID<br />
+                    <br />
+                    ☏ (208) 555-5555<br />
+                    ✉ loop@theweatherloop.com
+                </p>
+                <div class="social">
+                    <img src="images/facebook.png" alt="facebook logo" />
+                    <img src="images/instagram.png" alt="instagram logo" />
+                    <img src="images/twitter.png" alt="twitter logo" />
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <p>&copy;The Weather Loop | Attributions | Sierra Angell</p>
         <div id="date"></div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/city.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
