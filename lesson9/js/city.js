@@ -38,9 +38,9 @@ fetch(requestURL)
       photo.setAttribute('alt', "A scenic image of " + singleCity[i].name);
 
       place.appendChild(photo);
-      place.appendChild(name);
-      place.appendChild(motto);
       place.appendChild(cityInfo);
+      cityInfo.appendChild(name);
+      cityInfo.appendChild(motto);
       cityInfo.appendChild(yearFounded);
       yearFounded.appendChild(foundedNum);
       cityInfo.appendChild(currentPop);

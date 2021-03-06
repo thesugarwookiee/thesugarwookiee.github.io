@@ -40,7 +40,6 @@
   }
 
   .cities {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     grid-gap: 15px;
@@ -49,7 +48,17 @@
   .cities section {
       display: grid;
       grid-template-columns: 1fr;
-      align-items: center;
-      justify-items: center;
+  }
+
+  .cityInfo {
+    max-width: 175px;
+  }
+
+  .cities section:nth-child(odd) img {
+    grid-column: 1;
+  }
+  
+  .cities section:nth-child(odd) .cityInfo {
+    grid-row: 2;
   }
 }

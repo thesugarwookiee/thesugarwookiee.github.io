@@ -74,14 +74,32 @@
 
   .gallery {
     grid-template-columns: 1fr 1fr;
-}
+  }
 
-.cards section {
-  display: grid;
-  width: 560px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 1fr;
-  padding: 0;
-}
+  .cities {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .cities section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .cities section:nth-child(odd) img {
+    grid-column: 2;
+  }
+
+  .cities section:nth-child(odd) .cityInfo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  img {
+    padding: 0;
+  }
 
 }

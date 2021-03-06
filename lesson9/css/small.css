@@ -339,12 +339,14 @@ input[type="submit"] {
 .cities section {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding-top: 5px;
+    padding: 10px;
 }
 
 .cities h4 {
     font-size: .7rem;
     font-family: var(--paragraph-font);
+    font-weight: normal;
+    color: var(--accent2-color);
 }
 
 .cities h2 {
