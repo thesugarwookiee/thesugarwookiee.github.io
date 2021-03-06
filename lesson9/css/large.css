@@ -41,17 +41,18 @@
 
   .cities {
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px;
+    max-width: 875px;
     grid-gap: 15px;
   }
 
   .cities section {
-      display: grid;
       grid-template-columns: 1fr;
+      padding: 15px;
   }
 
   .cityInfo {
     max-width: 175px;
+    max-height: 163px;
   }
 
   .cities section:nth-child(odd) img {
