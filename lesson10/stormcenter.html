@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Center | The Weather Loop</title>
+    <meta name="description"
+        content="Page to report ongoing storm happenings in your local area to the Weather Loop." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet" /> -->
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body>
+    <header>
+        <img src="images/wicon.png" class="icon" alt="sun behind cloud with lightning logo" />
+        <section class="heading">
+            <h1>The Weather Loop</h1>
+            <div class="motto">Keeping you constantly in the loop!</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="toggle" href="#">☰ Menu</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <div class="storm">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Personal</legend>
+                    <label>Full Name<input type="text" name="fullname" pattern="[\sa-zA-Z]{5,}"
+                            placeholder="First Last" class="input" required></label>
+                    <label>Email<input type="email" name="email" placeholder="email@demo.com"
+                            class="input"></label>
+                    <label>Phone Number<input type="tel" name="phone" placeholder="555 555 5555"
+                            class="input" required></label>
+                    <label>Zip Code<input type="number" name="zipcode" placeholder="54321"
+                            class="input" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Report</legend>
+                    <label>Storm Date<br><input type="date" class="input" name="stormdate"></label>
+                    <label>Storm Type<input list="stormlist" name="stormtype"
+                            placeholder="Type of Storm" class="input"></label>
+                    <datalist id="stormlist">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                    <label for="stormseverity">Storm Severity:
+                        <input type="range" class="slider" id="stormseverity" value="5" min="1" max="10" step="1"
+                            oninput="adjustNumber(this.value)" onchange="adjustNumber(this.value)"><br>
+                        <span id="stormvalue">5</span>
+                    </label>
+                    <label>Storm Region
+                        <select name="stormregion" class="input">
+                            <option disabled selected>Select Region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+                    </label>
+                    <label>Are you in danger?</label>
+                    <label class="radio"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="radio"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="radio"><input type="radio" name="danger" value="no"> No</label>
+                    <label>Additional Information<textarea name="information"
+                            placeholder="What else can you tell us?" class="input"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Report!" class="stormButton">
+            </form>
+        </div>
+        </main>
+        <footer>
+            <p>&copy;The Weather Loop | Attributions | Sierra Angell</p>
+            <div id="date"></div>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ["Work Sans", "Roboto"],
+                },
+            });
+        </script>
+</body>
+
+</html>

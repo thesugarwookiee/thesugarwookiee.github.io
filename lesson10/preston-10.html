@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preston | The Weather Loop</title>
+    <meta name="description"
+        content="Site dedicated to up to date weather information for the city of Preston, Idaho." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body>
+    <div id="event">
+        <p>
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+            park pavilion.
+        </p>
+    </div>
+    <header>
+        <img src="images/wicon.png" class="icon" alt="sun behind cloud with lightning logo" />
+        <section class="heading">
+            <h1>The Weather Loop</h1>
+            <div class="motto">Keeping you constantly in the loop!</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="toggle" href="#">☰ Menu</a></li>
+            <li><a href="./">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="herow"><img src="images/preshero.jpg" class="responsive" alt="two rainbows over a field">
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <p>
+                    Currently: Sunny<br />
+                    Temperature: <span id="temp">45</span>&deg;F<br />
+                    Wind Chill: <span id="wind"></span><br />
+                    Humidity: 45%<br />
+                    Wind Speed: <span id="speed">15</span> MPH
+                </p>
+            </div>
+        </div>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <div class="fiveday">
+                <div class="tile">
+                    <p class="day">Wed</p>
+                    <img src="images/sunny.png" class="daycon" alt="sun" />
+                    <p class="temp">66&deg;F</p>
+                </div>
+                <div class="tile">
+                    <p class="day">Thur</p>
+                    <img src="images/sunny.png" class="daycon" alt="sun" />
+                    <p class="temp">67&deg;F</p>
+                </div>
+                <div class="tile">
+                    <p class="day">Fri</p>
+                    <img src="images/sunny.png" class="daycon" alt="sun" />
+                    <p class="temp">75&deg;F</p>
+                </div>
+                <div class="tile">
+                    <p class="day">Sat</p>
+                    <img src="images/sunny.png" class="daycon" alt="sun" />
+                    <p class="temp">74&deg;F</p>
+                </div>
+                <div class="tile">
+                    <p class="day">Sun</p>
+                    <img src="images/sunny.png" class="daycon" alt="sun" />
+                    <p class="temp">80&deg;F</p>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <h3 class="title">Article Title</h3>
+            <img src="images/park.jpg" class="artpic" alt="white bench in green park" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+                mollitia culpa, corporis repellat officia itaque nulla, sint ab
+                doloribus quod eos laboriosam maxime iste tempore at, dicta natus
+                distinctio! Rerum illum hodit am aspernatur ipsa necessitatibus,
+                laboriosam iste quam. At corporis est assumenda nobis ut, in eligendi
+                illum libero totam accusamus sit? Non perspiciatis impedit ratione
+                voluptates adipisci ducimus minus, reprehenderit pariatur obcaecati
+                quidem molestias soluta repudiandae tempora nobis, cum rerum.
+                Reprehenderit cupiditate incidunt nullaficiis expedita ipsa inventore!
+            </p>
+
+            <p>
+                Neque excepturi, sint reprehenderit consectetur reiciendis, sequi
+                nostrum earum voluptates ipsum illo ut. Ea, delectus expedita alias
+                omnis voluptatibus, impedit adipisci quidem dolores et nulla inventore
+                excepturi? Rerum possimus, molestiae animi saepe sapiente maxime optio
+                officiis reiciendis quasi quam, perspiciatis officia quod, fugit
+                facilis doloremque corporis. Saepe consequuntur, quidem enim eum illum
+                vel earum neque. Iure illlum voluptates. Doloribus rem voluptatum quos
+                quaerat, aut placeat quia ratione amet veritatis, sequi id aliquam
+                aliquid impedit animi sed est voluptates sit unde. Sed rerum id
+                voluptatibus error, facere enim dolorem commodi quasi cum consequatur
+                vero officiis inventore alias optio, maiores modi delectus est
+                explicabo architecto iure perferendis ut! Inventore corrupti
+                laudantium sit quos ducimus nulla, facere asperiores.
+            </p>
+        </div>
+        <div class="contact">
+            <img src="images/prestonmap.jpg" class="map" alt="map of preston idaho" />
+            <div>
+                <h3>Contact Information</h3>
+                <p>
+                    ◉ 21 Random Street<br />
+                    Preston, ID<br />
+                    <br />
+                    ☏ (208) 555-5555<br />
+                    ✉ loop@theweatherloop.com
+                </p>
+                <div class="social">
+                    <img src="images/facebook.png" alt="facebook logo" />
+                    <img src="images/instagram.png" alt="instagram logo" />
+                    <img src="images/twitter.png" alt="twitter logo" />
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;The Weather Loop | Attributions | Sierra Angell</p>
+        <div id="date"></div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Work Sans", "Roboto"],
+            },
+        });
+    </script>
+</body>
+
+</html>
