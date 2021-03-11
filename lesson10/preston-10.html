@@ -44,41 +44,41 @@
             <div class="summary">
                 <h3>Weather Summary</h3>
                 <p>
-                    Currently: Sunny<br />
-                    Temperature: <span id="temp">45</span>&deg;F<br />
+                    Currently: <span id="current"></span><br />
+                    Temperature: <span id="temp"></span><br />
                     Wind Chill: <span id="wind"></span><br />
-                    Humidity: 45%<br />
-                    Wind Speed: <span id="speed">15</span> MPH
+                    Wind Speed: <span id="speed"></span><br />
+                    Humidity: <span id="humid"></span>
                 </p>
             </div>
         </div>
-        <div class="forecast">
+        <div class="forecast" class="temp" id="forecast">
             <h3>5 Day Forecast</h3>
             <div class="fiveday">
                 <div class="tile">
-                    <p class="day">Wed</p>
-                    <img src="images/sunny.png" class="daycon" alt="sun" />
-                    <p class="temp">66&deg;F</p>
+                    <p class="day" id="day1"></p>
+                    <img id="icon1" src="" alt=""></td>
+                    <p class="temp" id="cast1"></p>
                 </div>
                 <div class="tile">
-                    <p class="day">Thur</p>
-                    <img src="images/sunny.png" class="daycon" alt="sun" />
-                    <p class="temp">67&deg;F</p>
+                    <p class="day" id="day2"></p>
+                    <img id="icon2" src="" alt=""></td>
+                    <p class="temp" id="cast2"></p>
                 </div>
                 <div class="tile">
-                    <p class="day">Fri</p>
-                    <img src="images/sunny.png" class="daycon" alt="sun" />
-                    <p class="temp">75&deg;F</p>
+                    <p class="day" id="day3"></p>
+                    <img id="icon3" src="" alt=""></td>
+                    <p class="temp" id="cast3"></p>
                 </div>
                 <div class="tile">
-                    <p class="day">Sat</p>
-                    <img src="images/sunny.png" class="daycon" alt="sun" />
-                    <p class="temp">74&deg;F</p>
+                    <p class="day" id="day4"></p>
+                    <img id="icon4" src="" alt=""></td>
+                    <p class="temp" id="cast4"></p>
                 </div>
                 <div class="tile">
-                    <p class="day">Sun</p>
-                    <img src="images/sunny.png" class="daycon" alt="sun" />
-                    <p class="temp">80&deg;F</p>
+                    <p class="day" id="day5"></p>
+                    <img id="icon5" src="" alt=""></td>
+                    <p class="temp" id="cast5"></p>
                 </div>
             </div>
         </div>
@@ -137,7 +137,7 @@
         <div id="date"></div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/weather.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
