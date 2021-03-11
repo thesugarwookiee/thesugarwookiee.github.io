@@ -1,4 +1,4 @@
-//show wind chill if applicable in weather summary
+// show wind chill if applicable in weather summary
 // var tmp = parseInt(document.getElementById("temp").innerText);
 // var spd = parseInt(document.getElementById("speed").innerText);
 
@@ -12,7 +12,6 @@
 // }
 
 let cityID = 5604473;
-
 const apiWeather = `http://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=11256484b2b104b0c4bb05797b326d5c`
 const apiForecast = `http://api.openweathermap.org/data/2.5/forecast?id=${cityID}&units=imperial&appid=11256484b2b104b0c4bb05797b326d5c`
 
