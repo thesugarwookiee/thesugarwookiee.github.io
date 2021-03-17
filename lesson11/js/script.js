@@ -20,12 +20,6 @@ window.onresize = () => {
     if (window.innerWidth > 650) nav.classList.remove('responsive')
 };
 
-
-//show pancake breakfast event on friday
-if (current.getDay() == 5) {
-    document.getElementById("event").style.display = "block";
-}
-
 //show the level of the storm range severity
 function adjustNumber(stormseverity) {
     document.getElementById("stormvalue").innerHTML = stormseverity;
