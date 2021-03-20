@@ -59,5 +59,5 @@ fetch(requestURL)
             ul.appendChild(listItem);
         });
 
-        document.getElementById("fishevents").appendChild(ul);
+        document.getElementById("events").appendChild(ul);
     });

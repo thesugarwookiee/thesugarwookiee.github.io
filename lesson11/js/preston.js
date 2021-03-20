@@ -66,5 +66,5 @@ fetch(requestURL)
             ul.appendChild(listItem);
         });
 
-        document.getElementById("presevents").appendChild(ul);
+        document.getElementById("events").appendChild(ul);
     });

@@ -60,5 +60,5 @@ fetch(requestURL)
             ul.appendChild(listItem);
         });
 
-        document.getElementById("sodaevents").appendChild(ul);
+        document.getElementById("events").appendChild(ul);
     });
