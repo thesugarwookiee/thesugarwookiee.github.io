@@ -389,3 +389,18 @@ input[type="submit"] {
     background-color: var(--accent2-color);
     padding: 1rem 2rem;
 }
+
+.event {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 40px;
+    line-height: 2rem;
+}
+
+.event ul {
+    padding-left: 14px;
+}
+
+hr {
+    color: var(--accent2-color);
+}
