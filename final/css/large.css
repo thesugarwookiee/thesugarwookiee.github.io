@@ -1,0 +1,64 @@
+@media only screen and (min-width: 875px) {
+
+  body {
+    max-width: 1920px;
+  }
+
+  main {
+    max-width: 1150px;
+    margin: auto;
+  }
+
+  footer {
+    max-width: 1150px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .galleryitem {
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: start;
+  }
+
+  .stormButton {
+    grid-column: 2 / 3;
+    justify-self: right;
+  }
+
+  .cities {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 875px;
+    grid-gap: 15px;
+  }
+
+  .cities section {
+      grid-template-columns: 1fr;
+      padding: 15px;
+  }
+
+  .cityInfo {
+    max-width: 175px;
+  }
+
+  .cities section:nth-child(odd) img {
+    grid-column: 1;
+  }
+  
+  .cities section:nth-child(odd) .cityInfo {
+    grid-row: 2;
+  }
+}

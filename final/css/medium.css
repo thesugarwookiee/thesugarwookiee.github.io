@@ -1,0 +1,90 @@
+@media only screen and (min-width: 650px) {
+  nav ul {
+    flex-flow: row;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+h1 {
+    font-size: 2rem;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  #event {
+    font-size: 1.5rem;
+  }
+
+  .herow {
+    position: relative;
+  }
+
+  .action {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    padding: 1.5rem;
+  }
+
+  .forecast {
+    display: block;
+  }
+
+  .artpic {
+    float: right;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .map {
+    display: block;
+  }
+
+  .fiveday {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 570px;
+    margin: 0 auto;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cities {
+    grid-gap: 10px;
+    padding: 20px 0;
+    max-width: 600px;
+  }
+
+  .cities section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cities section:nth-child(odd) img {
+    grid-column: 2;
+  }
+
+  .cities section:nth-child(odd) .cityInfo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .event {
+    margin: 0 auto;
+    max-width: 470px;
+  }
+}

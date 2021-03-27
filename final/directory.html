@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soda Springs | The Weather Loop</title>
+    <meta name="description"
+        content="Site dedicated to up to date weather information for the city of Soda Springs, Idaho." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a class="toggle" href="#">☰ Menu</a></li>
+            <li class="active"><a class="active" href="#">Home</a></li>
+            <li><a href="mililani.html">Mililani</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <section class="heading"><a href="./"><img src="images/sunny.png" class="icon"
+                alt="pink hibiscus logo" /></a>
+        <h1>Mililani Chamber of Commerce</h1>
+        </section>
+        <div class="herow"><img src="images/herom.jpg" class="responsive" alt="pink ginger plant banner">
+            <div class="action">
+                <section><a href="join.html">Join the Chamber!</a></section>
+            </div>
+    </header>
+    <main>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <div class="fiveday">
+                <div class="tile">
+                    <p class="day" id="day1">Day</p>
+                    <img id="icon1" src="images/sunny.png" alt="default sun">
+                    <p class="temp" id="cast1">##</p>
+                </div>
+                <div class="tile">
+                    <p class="day" id="day2">Day</p>
+                    <img id="icon2" src="images/sunny.png" alt="default sun">
+                    <p class="temp" id="cast2">##</p>
+                </div>
+                <div class="tile">
+                    <p class="day" id="day3">Day</p>
+                    <img id="icon3" src="images/sunny.png" alt="default sun">
+                    <p class="temp" id="cast3">##</p>
+                </div>
+                <div class="tile">
+                    <p class="day" id="day4">Day</p>
+                    <img id="icon4" src="images/sunny.png" alt="default sun">
+                    <p class="temp" id="cast4">##</p>
+                </div>
+                <div class="tile">
+                    <p class="day" id="day5">Day</p>
+                    <img id="icon5" src="images/sunny.png" alt="default sun">
+                    <p class="temp" id="cast5">##</p>
+                </div>
+            </div>
+        </div>
+        <div id="events" class="event">
+            <h3>Upcoming Events</h3>
+            <hr>
+        </div>
+        <div class="article">
+            <h3 class="title">Stay A While</h3>
+            <img src="images/gallery3.jpg" class="artpic" alt="family enjoying winter time" />
+            <p>
+                Don't worry about getting snowed in! Here in Soda Springs, we have you covered. Even if you have to stay
+                a week or two longer than planned because a blizzard came through and knocked out the roads, there's
+                nothing to worry about. We have all the free WiFi you could ever hope for, and more important than that,
+                we know how to keep warm! You may find you came here on spring break, then a freak snowstorm rolled
+                through. We know how to handle this, isn't the first time it's happened! With top of the line and well
+                loved ski lofts, there is no lack of places to stay, and we'll keep you secure until the snow melts
+                enough for you to escape to literally greener pastures.
+            </p>
+
+            <p>
+                Here's a quick story about a family this happened to. The Salvado's were here just last year during the
+                start of March, and they were less prepared for the snow than theye should have been! But it was
+                alright, when they got stuck here a whole extra month, they had the time of their lives. Even their
+                three-year-old daughter Hannah got so good at skiing while here in Soda Springs that she came back the
+                next year and made it down a black diamond trail with no problems. They had hot chocolate every day and
+                nothing to complain about even if they couldn't go home. Sometimes it seemed like they would never
+                leave, and boy they sure were happy about that! So come and hang out with us, go to one of our upcoming
+                events--we have plenty! And if you like soda, we'd love to talk about it with you. We aren't named Soda
+                Springs for nothing!
+            </p>
+        </div>
+        <div class="contact">
+            <img src="images/prestonmap.jpg" class="map" alt="map of preston idaho" />
+            <div>
+                <h3>Contact Information</h3>
+                <p>
+                    ◉ 21 Random Street<br />
+                    Preston, ID<br />
+                    <br />
+                    ☏ (208) 555-5555<br />
+                    ✉ loop@theweatherloop.com
+                </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png"
+                            alt="facebook logo" /></a>
+                    <a href="https://www.instagram.com" target="blank"><img src="images/instagram.png"
+                            alt="instagram logo" /></a>
+                    <a href="https://www.twitter.com" target="blank"><img src="images/twitter.png"
+                            alt="twitter logo" /></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;The Weather Loop | <a href="https://openweathermap.org/">Open Weather Map</a> | Sierra Angell</p>
+        <div id="date"></div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/sodasprings.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Work Sans", "Roboto"],
+            },
+        });
+    </script>
+</body>
+
+</html>

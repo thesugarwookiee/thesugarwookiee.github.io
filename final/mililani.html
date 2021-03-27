@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preston | The Weather Loop</title>
+    <meta name="description"
+        content="Site dedicated to up to date weather information for the city of Preston, Idaho." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a class="toggle" href="#">☰ Menu</a></li>
+            <li class="active"><a class="active" href="#">Home</a></li>
+            <li><a href="mililani.html">Mililani</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <section class="heading"><a href="./"><img src="images/sunny.png" class="icon"
+                alt="pink hibiscus logo" /></a>
+        <h1>Mililani Chamber of Commerce</h1>
+        </section>
+        <div class="herow"><img src="images/herom.jpg" class="responsive" alt="pink ginger plant banner">
+            <div class="action">
+                <section><a href="join.html">Join the Chamber!</a></section>
+            </div>
+    </header>
+    <main>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <div class="fiveday">
+                <div class="tile">
+                    <p class="day" id="day1">Day</p>
+                    <img id="icon1" src="images/sunny.png" alt="default sun">
+                    <p class="temp" id="cast1">##</p>
+                </div>
+                <div class="tile">
+                    <p class="day" id="day2">Day</p>
+                    <img id="icon2" src="images/sunny.png" alt="default sun">
+                    <p class="temp" id="cast2">##</p>
+                </div>
+                <div class="tile">
+                    <p class="day" id="day3">Day</p>
+                    <img id="icon3" src="images/sunny.png" alt="default sun">
+                    <p class="temp" id="cast3">##</p>
+                </div>
+                <div class="tile">
+                    <p class="day" id="day4">Day</p>
+                    <img id="icon4" src="images/sunny.png" alt="default sun">
+                    <p class="temp" id="cast4">##</p>
+                </div>
+                <div class="tile">
+                    <p class="day" id="day5">Day</p>
+                    <img id="icon5" src="images/sunny.png" alt="default sun">
+                    <p class="temp" id="cast5">##</p>
+                </div>
+            </div>
+        </div>
+        <div id="events" class="event">
+            <h3>Upcoming Events</h3>
+            <hr>
+        </div>
+        <div class="article">
+            <h3 class="title">Relax Here</h3>
+            <img src="images/park.jpg" class="artpic" alt="white bench in green park" />
+            <p>
+                Most people don't know much about our beautiful town! Preston is one of a kind in so many ways, a
+                gateway to Idaho as we know and love her. We might look like not much at a glance, but once you get in
+                here there is a whole lot to admire and to take advantage of! Want to see a baby cow? Who doesn't! You
+                can definitely find one of those here, especially at this time. I think it's worth remembering that we
+                have plenty of places to take your shoes off and stay a while. The nice thing about a town like this is
+                there is no rush for anything--you can kick back and relax because there's little else to do!
+            </p>
+
+            <p>
+                I don't think it's fair to say that doing nothing is a bad thing. The simple life isn't for everyone,
+                and sometimes you want a day that's a little more exciting, but on the day to day or even as a vacation,
+                sometimes having nothing to do is the best thing ever! Too often in our lives, we find ourselves in
+                places where we have to 'go go go' or risk missing out on something important. In our jobs, as parents,
+                as students, we have lists of tasks to complete and there is nothing quite so rewarding as being told to
+                not think about them--and heeding that advice. Here in Preston we do things right, and sometimes doing
+                things right means just pulling up a spot in a park or on your porch and having a lemonade. Don't worry
+                about it! The more often you let your brain decompress like this, the better it will be! So live the
+                Preston way and just let the world pass you by every once in a while.
+            </p>
+        </div>
+        <div class="contact">
+            <img src="images/prestonmap.jpg" class="map" alt="map of preston idaho" />
+            <div>
+                <h3>Contact Information</h3>
+                <p>
+                    ◉ 21 Random Street<br />
+                    Preston, ID<br />
+                    <br />
+                    ☏ (208) 555-5555<br />
+                    ✉ loop@theweatherloop.com
+                </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png"
+                            alt="facebook logo" /></a>
+                    <a href="https://www.instagram.com" target="blank"><img src="images/instagram.png"
+                            alt="instagram logo" /></a>
+                    <a href="https://www.twitter.com" target="blank"><img src="images/twitter.png"
+                            alt="twitter logo" /></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;The Weather Loop | <a href="https://openweathermap.org/">Open Weather Map</a> | Sierra Angell</p>
+        <div id="date"></div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/preston.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Work Sans", "Roboto"],
+            },
+        });
+    </script>
+</body>
+
+</html>
