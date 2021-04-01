@@ -21,10 +21,6 @@ h1 {
     display: none;
   }
 
-  #event {
-    font-size: 1.5rem;
-  }
-
   .herow {
     position: relative;
   }
@@ -34,6 +30,12 @@ h1 {
     bottom: 20px;
     right: 25px;
     padding: 1.5rem;
+    border-radius: 1.75rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
 
   .forecast {
@@ -47,6 +49,7 @@ h1 {
   .contact {
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
   }
 
   .map {

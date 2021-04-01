@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
 
-
-
-
 :root {
     --primary-color: #261B09;
     --secondary-color: #FEFCEC;
     --accent1-color: #1a78b3;
-    --accent3-color: #74EB90;
+    --accent3-color: #b3ddbd;
     --accent2-color: #be4a7a;
     --heading-font: 'EB Garamond', serif;
     --paragraph-font: 'Montserrat', sans-serif;
@@ -18,7 +15,7 @@ body {
     color: var(--primary-color);
     font-family: var(--paragraph-font);
     background-color: var(--secondary-color);
-    margin: auto;
+    margin: 0 auto;
 }
 
 header {
@@ -29,7 +26,6 @@ header {
 .heading {
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-gap: 0;
 }
 
 .heading a:link {
@@ -81,9 +77,6 @@ nav ul a:hover {
     color: var(--primary-color);
 }
 
-h2 {
-    padding-left: 1rem;
-}
 
 h2,
 h3,
@@ -92,6 +85,7 @@ h4 {
     background-color: var(--primary-color);
     padding: 1rem;
     color: var(--secondary-color);
+    border-radius: .75rem;
 }
 
 .title {
@@ -112,7 +106,7 @@ footer {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 1rem;
+    padding: 1rem 0;
     font-size: .85rem;
 }
 
@@ -158,15 +152,8 @@ img {
     display: none;
 }
 
-.responsive li {
+.toggle li {
     display: block;
-}
-
-#event {
-    background-color: var(--accent3-color);
-    text-align: center;
-    padding: 1rem;
-    display: none;
 }
 
 .responsive {
@@ -181,26 +168,16 @@ img {
 }
 
 .action a:visited {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 .forecast {
     display: none;
 }
 
-.article,
-.forecast {
-    padding: 1rem;
-}
-
-.artpic {
-    margin: .75rem;
-    border: 4px solid var(--accent3-color);
-}
-
 .contact {
-    background-color: var(--accent1-color);
-    padding: 1.5rem;
+    background-color: var(--accent3-color);
+    color: var(--primary-color);
 }
 
 .map {
@@ -395,10 +372,6 @@ input[type="submit"] {
     font-size: 1.5rem;
     color: var(--accent3-color);
     margin-bottom: 0;
-}
-
-.mainArticle {
-    padding: 1rem 2rem;
 }
 
 .event {
