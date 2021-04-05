@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Mililani Chamber of Commerce</title>
-    <meta name="description"
-        content="Site dedicated to the Chamber of Commcerce for the city of Mililani, Hawaii." />
+    <meta name="description" content="Site dedicated to the Chamber of Commcerce for the city of Mililani, Hawaii." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -25,9 +24,8 @@
         </ul>
     </nav>
     <header>
-        <section class="heading"><a href="./"><img src="images/sunny.png" class="icon"
-                alt="pink hibiscus logo" /></a>
-        <h1>Mililani Chamber of Commerce</h1>
+        <section class="heading"><a href="./"><img src="images/sunny.png" class="icon" alt="pink hibiscus logo" /></a>
+            <h1>Mililani Chamber of Commerce</h1>
         </section>
         <div class="herow"><img src="images/herom.jpg" class="responsive" alt="pink ginger plant banner">
             <div class="action">
@@ -35,11 +33,74 @@
             </div>
     </header>
     <main>
-        <div class="cities"></div>
-    </main>
-    <footer>
-        <div class="contact">
-            <img src="images/prestonmap.jpg" class="map" alt="map of preston idaho" />
+        <div class="homepage">
+            <section class="info">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, delectus voluptatem iusto modi
+                    rem
+                    blanditiis ratione cum itaque beatae laborum non dolore! Molestias cum excepturi, vel et in nemo non
+                    quis. Placeat nisi recusandae officia, ducimus incidunt accusamus veniam iure praesentium dicta,
+                    vero
+                    optio fuga ipsum mollitia suscipit nihil magni eum amet vel quis similique aperiam. Architecto
+                    recusandae quas ipsa sequi praesentium exercitationem porro quam culpa a delectus? Iusto totam
+                    accusantium quae illo. Dolorum explicabo ullam necessitatibus laboriosam esse perspiciatis neque
+                    ducimus
+                    corrupti veritatis, nihil molestias recusandae ex ad itaque? Magnam culpa inventore consequuntur
+                    eaque
+                    ratione odio, quos fuga reprehenderit dolor earum quam enim alias tenetur expedita repellat
+                    temporibus
+                    cupiditate tempora nostrum, quisquam, laborum voluptas deleniti labore ullam. Repellat sit maiores,
+                    quisquam, harum aperiam neque assumenda odio architecto ea in quo quibusdam laboriosam officiis
+                    illum
+                    doloribus itaque sed rerum nulla necessitatibus.</p>
+
+                <p>Velit atque unde, aperiam dolores animi ut dolor et
+                    iste corrupti totam mollitia ipsam, at explicabo ipsum inventore aut perspiciatis facilis omnis
+                    quisquam
+                    quis rerum? Dolorem explicabo accusamus, laudantium sunt at maxime animi mollitia obcaecati quasi,
+                    magnam quis! Recusandae impedit commodi sint odio, accusamus dolorum corporis. Perspiciatis, enim
+                    ipsam
+                    obcaecati rem qui non est voluptate illo, totam placeat aliquam aspernatur distinctio explicabo
+                    delectus
+                    asperiores aperiam atque temporibus eveniet odit. Vel veritatis laudantium natus, maiores culpa,
+                    dolorum
+                    autem distinctio molestiae, itaque asperiores optio aut! Nihil ullam quas, ipsam eum deserunt
+                    assumenda
+                    nisi vel quod autem perferendis atque sapiente non quo odit inventore veritatis sunt voluptate modi.
+                    Aspernatur minus nesciunt commodi.</p>
+            </section>
+            <section class="ads"><a href="https://theshackmililani.com/"><img src="images/shack.png"
+                        alt="a restaurant in mililani"></a>
+                <h3>The Shack Mililani</h3>
+                <p class="xxx">☏ (808) 627-1561<br>
+                    ◉ 95-221 Kipapa Dr</p>
+                <a href="https://marisgardens.com/"><img src="images/mari.png" alt="a garden shop in mililani"></a>
+                <h3>Mari's Gardens</h3>
+                <p class="xxx">☏ (808) 625-2800<br>
+                    ◉ 94-415 Makapipipi St</p>
+                <a href="https://theshackmililani.com/"><img src="images/shack.png" alt="a restaurant in mililani"></a>
+                <h3>The Shack Mililani</h3>
+                <p class="xxx">☏ (808) 627-1561<br>
+                    ◉ 95-221 Kipapa Dr</p>
+            </section>
+            <section class="events">
+                <h2>Mililani Events</h2>
+            </section>
+            <section class="weather">
+
+                <h2>Mililani Weather</h2>
+                <div class="subweather">
+                    <div class="summary">
+                        <p>Currently:<br> <img id="currenticon" src="images/sunny.png" alt="default sun"><br>
+                            <span id="current"></span><br>
+                    </div>
+                    <div class="additional">Temperature: <span id="temp"></span><br>
+                        Humidity: <span id="humid"></span><br>
+                    </div>
+                    <div class="forecast">FORECAST</div>
+                </div>
+            </section>
+            <div class="contact">
                 <p>
                     ◉ 94-2345 Ono Street<br />
                     Mililani, HI<br />
@@ -54,13 +115,16 @@
                             alt="instagram logo" /></a>
                     <a href="https://www.twitter.com" target="blank"><img src="images/twitter.png"
                             alt="twitter logo" /></a>
-                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
         </div>
         <p>&copy;Mililani Chamber of Commerce | Attributions | Sierra Angell</p>
-        <div id="date"></div>
+        <p>Last updated: <span id="mod"></span></p>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/city.js"></script>
+    <script src="js/weather.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({

@@ -78,14 +78,17 @@ nav ul a:hover {
 }
 
 
-h2,
-h3,
-h4 {
+h2
+{
     font-family: var(--heading-font);
     background-color: var(--primary-color);
     padding: 1rem;
     color: var(--secondary-color);
     border-radius: .75rem;
+}
+
+h3 {
+    padding-left: 1rem;
 }
 
 .title {
@@ -178,6 +181,7 @@ img {
 .contact {
     background-color: var(--accent3-color);
     color: var(--primary-color);
+    padding: .5rem;
 }
 
 .map {
@@ -213,25 +217,32 @@ img {
     margin-bottom: 5px;
 }
 
+.subweather {
+    display: flex;
+    justify-content: space-around;
+}
+
+.summary {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    max-width: 100px;
+    padding: .5rem 1rem;
+}
+
 #current {
     text-transform: capitalize;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 15px;
-    align-items: center;
-    justify-items: center;
+.ads {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
-.galleryitem {
-    margin: 0;
-    padding: 15px;
-}
-
-.storm {
-    max-width: 400px;
+.xxx {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 
 form {
