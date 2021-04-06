@@ -88,7 +88,7 @@ h3 {
 }
 
 a:link {
-    color: var(--secondary-color);
+    color: var(--accent2-color);
     text-decoration: none;
 }
 
@@ -165,8 +165,12 @@ footer a:visited {
     text-align: center;
 }
 
-.action a:visited {
+.action a:visited, .action a:link {
     color: var(--secondary-color);
+}
+
+.action:hover {
+    background-color: var(--accent1-color);
 }
 
 .contact {
