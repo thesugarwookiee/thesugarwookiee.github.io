@@ -92,10 +92,6 @@ h3 {
     margin: .25rem;
 }
 
-.title {
-    color: var(--accent1-color);
-}
-
 a:link {
     color: var(--primary-color);
     text-decoration: none;
@@ -126,23 +122,6 @@ footer a:visited {
     padding: .5rem;
 }
 
-img {
-    align-self: center;
-}
-
-.motto {
-    padding-top: .75rem;
-    font-style: italic;
-    font-size: .85rem;
-    margin: 0 0 0 15px;
-}
-
-.holder {
-    padding: 1rem;
-    margin: 1rem;
-    border: 2px solid var(--accent3-color);
-}
-
 .navigation {
     list-style: none;
     padding: 0;
@@ -166,7 +145,8 @@ img {
 }
 
 .action {
-    background-color: var(--accent2-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     margin: 0 auto;
     padding: 2rem;
 }
