@@ -102,7 +102,7 @@ main {
 }
 
 main p {
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .ads {
@@ -165,7 +165,8 @@ footer a:visited {
     text-align: center;
 }
 
-.action a:visited, .action a:link {
+.action a:visited,
+.action a:link {
     color: var(--secondary-color);
 }
 
@@ -182,8 +183,10 @@ footer a:visited {
 }
 
 .map {
-    display: none;
-    border: 2px solid var(--primary-color);
+    padding: 1.25rem;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    max-width: 400px;
 }
 
 .social {
@@ -257,12 +260,16 @@ hr {
 }
 
 form {
-    padding: 1.5rem;
+    padding-top: 1rem;
 }
 
 form fieldset {
     margin-bottom: 25px;
-    border: 3px solid var(--accent1-color);
+    border: 3px solid var(--primary-color);
+    background-color: var(--accent3-color);
+    border-radius: 20px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 form legend {
@@ -270,6 +277,7 @@ form legend {
     padding: 0 5px;
     color: var(--primary-color);
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 form label {
@@ -277,33 +285,6 @@ form label {
     padding-bottom: 5px;
     padding: 10px;
     line-height: 2rem;
-}
-
-.slider {
-    display: block;
-    margin-top: 2px;
-    border: solid .5px var(--primary-color);
-    color: var(--primary-color);
-    box-sizing: border-box;
-    width: 300px;
-    -webkit-appearance: none;
-    appearance: none;
-    height: 25px;
-    background: var(--primary-color);
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 25px;
-    background: var(--accent2-color);
-}
-
-.slider::-moz-range-thumb {
-    width: 15px;
-    height: 25px;
-    background: var(--accent2-color);
 }
 
 .radio {
@@ -314,73 +295,47 @@ form label {
     display: block;
     padding: 10px;
     margin-top: 2px;
-    border: solid .5px var(--primary-color);
-    color: var(--primary-color);
-    box-sizing: border-box;
-    width: 300px;
+    border: none;
+    max-width: 325px;
+    min-width: 300px;
+    border-radius: 10px;
 }
-
 
 textarea {
     min-height: 100px;
     resize: none;
-    max-width: 300px;
+    max-width: 325px;
+    min-width: 300px;
 }
 
-input:required {
-    background-color: rgba(240, 230, 174, 0.2);
-}
-
-input:required:valid {
-    border-left: var(--primary-color) solid 8px;
-    background-color: white;
-}
-
+input:required,
+textarea:required,
 input:invalid {
-    border-left: var(--accent1-color) solid 8px;
+    border-left: var(--accent2-color) solid 10px;
+}
+
+input:required:valid,
+textarea:required:valid {
+    border-left: var(--accent1-color) solid 10px;
 }
 
 input[type="submit"] {
     border: none;
     font-weight: bold;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     color: var(--secondary-color);
     padding: 10px 15px 10px 15px;
     max-width: 150px;
 }
 
+.button {
+    border-radius: 10px;
+    margin-left: 1.5rem;
+    margin-top: 10px;
+}
+
 .thankyou {
-    font-size: 1.3rem;
-}
-
-.cities {
-    max-width: 300px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 5px;
-    padding: 10px;
-}
-
-.cities section {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
-    padding: 20px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-.event {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 10px 40px;
-    line-height: 2rem;
-}
-
-.event ul {
-    padding-left: 14px;
+    font-size: 1.2rem;
 }
 
 ul {
@@ -407,4 +362,13 @@ ul {
 #temp {
     font-size: 3rem;
     text-align: center;
+}
+
+.directorlist {
+    line-height: 2rem;
+}
+
+.directorlist b {
+    color: var(--accent1-color);
+    font-size: 1.25rem;
 }

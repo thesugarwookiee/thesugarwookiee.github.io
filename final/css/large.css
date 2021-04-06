@@ -60,17 +60,28 @@
     grid-row-start: 2;
   }
 
-  form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    align-items: start;
-  }
-
   hr {
     color: var(--accent3-color);
     height: 3px;
     background-color: var(--accent3-color);
     display: block;
+  }
+
+  .input {
+    width: 425px;
+  }
+
+  textarea {
+    width: 425px;
+  }
+
+  .tact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .directorlist {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

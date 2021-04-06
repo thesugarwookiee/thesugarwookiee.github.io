@@ -34,10 +34,63 @@
             </div>
     </header>
     <main>
-        <section>MAP</section>
-        <section>INFO</section>
-        <section>FORM</section>
-        <section>DIRECTORS</section>
+        <div class="maintwo">
+            <section>
+                <h2>Contact Information</h2>
+                <div class="tact">
+                    <p>
+                        ◉ 94-2345 Ono Street<br />
+                        Mililani, HI<br />
+                        <br />
+                        ☏ (808) 555-5555<br />
+                        ✉ chamber@mcc.com
+                    </p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png"
+                                alt="facebook logo" /></a>
+                        <a href="https://www.instagram.com" target="blank"><img src="images/instagram.png"
+                                alt="instagram logo" /></a>
+                        <a href="https://www.twitter.com" target="blank"><img src="images/twitter.png"
+                                alt="twitter logo" /></a>
+                    </div>
+                </div>
+            </section>
+            <section class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29708.582407049802!2d-158.02879967726756!3d21.446030189509372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006704b74dc5fd%3A0xb68b50a4e1d2a215!2sMililani%2C%20HI%2096789!5e0!3m2!1sen!2sus!4v1617744030393!5m2!1sen!2sus"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></section>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Us!</legend>
+                    <label>Full Name<input type="text" name="fullname" pattern="[\sa-zA-Z]{5,}"
+                            placeholder="First Last (required)" class="input" required></label>
+                    <label>Email<input type="email" name="email" placeholder="email@demo.com (required)" class="input"
+                            required></label>
+                    <label>Phone Number<input type="tel" name="phone"
+                            pattern="^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" placeholder="555 555 5555"
+                            class="input"></label>
+                    <label>Question or Comment<textarea name="information" placeholder="What can we do for you?"
+                            class="input" required></textarea></label>
+                    <input type="submit" value="Send" class="button">
+                </fieldset>
+            </form>
+            <section class="directors">
+                <h2>Board of Directors</h2>
+                <div class="directorlist">
+                    <p><b>Donn Takaki</b> - Chair<br>
+                        CEO, Island Movers</p>
+                    <p><b>Kuuhaku Park</b> - Chair-Elect<br>
+                        VP, Government & Community Relations Pacific, Matson</p>
+                    <p><b>David Okabe</b> - First Vice Chair<br>
+                        EVP, CFO & Treasurer, Hawaii Pacific Health</p>
+                    <p><b>Alicia Moy</b> - Second Vice Chair<br>
+                        President & CEO, Hawaii Gas</p>
+                    <p><b>Mark Polivka</b> - Past Chair<br>
+                        President, Monarch Insurance Services, Inc.</p>
+                    <p><b>Arnold Martines</b> - Member<br>
+                        Executive VP, Chief Banking Officer, Central Pacific Bank</p>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy;Mililani Chamber of Commerce | <a href="attributions.html">Attributions</a>
