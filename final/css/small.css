@@ -88,7 +88,8 @@ h2
 }
 
 h3 {
-    padding-left: 1rem;
+    padding: 0 1rem;
+    margin: .25rem;
 }
 
 .title {
@@ -175,7 +176,8 @@ img {
 }
 
 .forecast {
-    display: none;
+    display: flex;
+    flex-flow: row;
 }
 
 .contact {
@@ -198,7 +200,7 @@ img {
 }
 
 .tile {
-    background-color: var(--accent3-color);
+    background-color: var(--accent1-color);
 }
 
 .day {
@@ -206,15 +208,21 @@ img {
     color: var(--secondary-color);
     text-align: center;
     padding: .5rem;
-    margin-top: 5px;
+    margin: 0;
 }
 
 .temp {
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    background-color: var(--accent3-color);
+    color: var(--primary-color);
     text-align: center;
     padding: .5rem;
-    margin-bottom: 5px;
+    margin: 0;
+}
+
+.additional {
+    align-self: center;
+    background-color: var(--accent3-color);
+    padding: 3.5rem;
 }
 
 .subweather {
@@ -227,22 +235,15 @@ img {
     color: var(--secondary-color);
     max-width: 100px;
     padding: .5rem 1rem;
+    text-align: center;
 }
 
 #current {
     text-transform: capitalize;
 }
 
-.ads {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
-}
-
-.xxx {
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+hr {
+    display: none;
 }
 
 form {
@@ -293,11 +294,6 @@ form label {
     width: 15px;
     height: 25px;
     background: var(--accent2-color);
-}
-
-#stormvalue {
-    font-size: 1.3rem;
-    text-align: right;
 }
 
 .radio {
@@ -366,25 +362,6 @@ input[type="submit"] {
     color: var(--secondary-color);
 }
 
-.cities p {
-    font-size: .9rem;
-    margin-bottom: 10px;
-}
-
-.cities h4 {
-    font-size: .7rem;
-    font-family: var(--paragraph-font);
-    font-weight: normal;
-    color: var(--accent2-color);
-}
-
-.cities h3 {
-    padding: 0;
-    font-size: 1.5rem;
-    color: var(--accent3-color);
-    margin-bottom: 0;
-}
-
 .event {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -396,6 +373,28 @@ input[type="submit"] {
     padding-left: 14px;
 }
 
-hr {
+ul {
+    line-height: 1.75rem;
+    max-width: 550px;
+}
+
+::marker {
     color: var(--accent2-color);
+    font-size: 1.35rem;
+}
+
+.walert {
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.close {
+    font-size: 1.5rem;
+    color: var(--accent2-color);
+}
+
+#temp {
+    font-size: 3rem;
+    text-align: center;
 }
