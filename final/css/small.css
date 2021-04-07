@@ -89,7 +89,7 @@ h3 {
     margin: .25rem;
 }
 
-main a:link {
+.directory a:link {
     color: var(--accent2-color);
     text-decoration: none;
     padding: 1.5rem;
