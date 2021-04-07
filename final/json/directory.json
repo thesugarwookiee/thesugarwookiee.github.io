@@ -1,0 +1,54 @@
+{
+    "places" : [
+        {
+            "name" : "Central Pacific Bank",
+            "address" : "95-720 Lanikuhana Ave",
+            "phone" : "(808) 544-0500",
+            "logo" : "images/cpblogo.svg",
+            "web" : "https://www.cpb.bank"
+        },
+        {
+            "name" : "Foodland",
+            "address" : "95-221 Kipapa Dr",
+            "phone" : "(808) 623-3974",
+            "logo" : "images/foodlandlogo.png",
+            "web" : "https://www.foodland.com"
+        },
+        {
+            "name" : "Conslidated Theater Mililani",
+            "address" : "95-1249 Meheula Pkwy Suite 173",
+            "phone" : "(808) 627-0200",
+            "logo" : "images/consolidatedlogo.png",
+            "web" : "https://www.consolidatedtheatres.com"
+        },
+        {
+            "name" : "Rise and Shine Cafe",
+            "address" : "95-1057 Ainamakua Dr # F-6",
+            "phone" : "(808) 260-9312",
+            "logo" : "images/riselogo.png",
+            "web" : "http://riseandshinecafeoahu.com"
+        },
+        {
+            "name" : "Mari's Gardens",
+            "address" : "94-415 Makapipipi St",
+            "phone" : "(808) 625-2800",
+            "logo" : "images/marilogo.png",
+            "web" : "https://marisgardens.com"
+        },
+        {
+            "name" : "Poke Stop",
+            "address" : "95-1840 Meheula Pkwy",
+            "phone" : "(808) 626-3400",
+            "logo" : "images/pokelogo.png",
+            "web" : "https://www.poke-stop.com"
+        },
+        {
+            "name" : "The Shack Mililani",
+            "address" : "95-221 Kipapa Dr",
+            "phone" : "(808) 627-1561",
+            "logo" : "images/shacklogo.jpg",
+            "web" : "https://theshackmililani.com"
+        }
+    ]
+}
+

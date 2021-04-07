@@ -30,6 +30,7 @@ header {
 
 .heading a:link {
     display: grid;
+
 }
 
 .icon {
@@ -64,6 +65,7 @@ nav a:visited {
     display: block;
     color: var(--secondary-color);
     padding: 1rem;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -87,9 +89,10 @@ h3 {
     margin: .25rem;
 }
 
-a:link {
+main a:link {
     color: var(--accent2-color);
     text-decoration: none;
+    padding: 1.5rem;
 }
 
 a:hover,
@@ -168,6 +171,7 @@ footer a:visited {
 .action a:visited,
 .action a:link {
     color: var(--secondary-color);
+    text-decoration: none;
 }
 
 .action:hover {
@@ -371,4 +375,27 @@ ul {
 .directorlist b {
     color: var(--accent1-color);
     font-size: 1.25rem;
+}
+
+.directory img {
+    padding: 25px;
+    max-width: 200px;
+}
+
+.grid {
+    display: grid;
+    background-color: var(--accent2-color);
+}
+
+.changebutton button {
+    display: none;
+ font-size: 2rem;
+ color: var(--secondary-color);
+ background-color: var(--accent1-color);
+ border-radius: 10px;
+ border: none;
+}
+
+.changebutton button:hover {
+    background-color: var(--accent2-color);
 }

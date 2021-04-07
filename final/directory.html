@@ -35,7 +35,11 @@
         </div>
     </header>
     <main>
-        <section>LIST</section>
+        <div class="changebutton">
+            <button onclick="listView()">☰</button> &nbsp;
+            <button onclick="gridView()">▣</button>
+        </div>
+        <div class="directory"></div>
     </main>
     <footer>
         <p>&copy;Mililani Chamber of Commerce | <a href="attributions.html">Attributions</a>
@@ -43,6 +47,7 @@
         <p>Last updated: <span id="mod"></span></p>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/directory.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
