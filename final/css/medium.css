@@ -149,4 +149,17 @@
   .changebutton button {
     display: inline;
   }
+
+  .up {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .bigside {
+    grid-column-start: 2;
+    grid-row: 1/4;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
 }

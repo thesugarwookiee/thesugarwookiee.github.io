@@ -399,3 +399,16 @@ ul {
 .changebutton button:hover {
     background-color: var(--accent2-color);
 }
+
+.bigside{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.bigside img {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: var(--accent3-color);
+    padding: 1rem;
+}
