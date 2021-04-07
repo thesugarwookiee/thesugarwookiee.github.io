@@ -58,9 +58,13 @@
     grid-gap: 30px;
   }
 
-  .maintwo form {
+  .maintwo .rightform {
     grid-row: 1/3;
     grid-column-start: 2;
+  }
+
+  .maintwo .leftform {
+    grid-row: 1/3;
   }
 
   .maintwo .directors {

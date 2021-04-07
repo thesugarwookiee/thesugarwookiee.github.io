@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join | Mililani Chamber of Commerce</title>
-    <meta name="description"
-        content="Page to join the Chamber of Commerce for the city of Mililani, Hawaii." />
+    <meta name="description" content="Page to join the Chamber of Commerce for the city of Mililani, Hawaii." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -35,23 +34,89 @@
         </div>
     </header>
     <main>
-        <section>INFO</section>
-        <section>FORM</section>
-        </main>
-        <footer>
-            <p>&copy;Mililani Chamber of Commerce | <a href="attributions.html">Attributions</a>
-                | Sierra Angell</p>
-            <p>Last updated: <span id="mod"></span></p>
-        </footer>
-        <script src="js/script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script>
-            WebFont.load({
+        <div class="maintwo">
+            <form method="get" action="thanks.html" class="leftform">
+                <fieldset>
+                    <legend>Application for Membership</legend>
+                    <label>First Name<input type="text" name="firstname" pattern="[\sa-zA-Z]{2,}"
+                            placeholder="First (required)" class="input" required></label>
+                    <label>Last Name<input type="text" name="lastname" pattern="[\sa-zA-Z]{2,}"
+                            placeholder="Last (required)" class="input" required></label>
+                    <label>Title<input type="text" name="title" placeholder="CEO, VP, Founder, etc."
+                            class="input"></label>
+                    <label>Email<input type="email" name="email" placeholder="email@demo.com (required)" class="input"
+                            required></label>
+                    <label>Cell Number<input type="tel" name="phone"
+                            pattern="^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" placeholder="555 555 5555"
+                            class="input"></label>
+                    <label>Business Name<input type="text" name="busname" placeholder="Company LLC (required)"
+                            class="input" required></label>
+                    <label>Business Address<textarea name="address" placeholder="95-555 STREET, CITY, HI, 55555"
+                            class="input"></textarea></label>
+                    <label>Business Website<input type="text" name="busweb" placeholder="www.companyhere.com"
+                            class="input"></label>
+                    <label>Business Description<textarea name="desc" placeholder="Tell us a little about your business!"
+                            class="input"></textarea></label>
+                    <label>Membership Level
+                        <select name="level" class="input">
+                            <option disabled selected>Select Membership...</option>
+                            <option value="nprofit">Non-profit ($100)</option>
+                            <option value="bronze">Bronze ($200)</option>
+                            <option value="silver">Silver ($400)</option>
+                            <option value="gold">Gold ($1000)</option>
+                        </select>
+                    </label>
+                    <input type="submit" value="Apply" class="button">
+                </fieldset>
+            </form>
+            <section>
+                <h2>Benefits</h2>
+                <p>Joining the Mililani Chamber of Commerce is one big step into easy networking for you and your
+                    business! At even our lowest level of membership, you will find yourself with access to a directory
+                    of businesses that can help strengethen and partnership with your own! You will also benefit from
+                    the overarching interests of the chamber, creating opportunities for you company that you simply
+                    cannot attain so easily on your own.</p>
+                <p>There are a number of different membership options to meet the needs of your business. These each
+                    have a membership fee paid annually to the chamber. These fees allow the chamber to assist your
+                    business based on your needs. Every year there is a luncheon for participating business members.
+                    Though some memberships include tickets to this event, those that do not can purchase the tickets at
+                    a later date seperately. We hope to be able to help you get your business to a state of thriving!
+                </p>
+                <p>Most recently introduced are our sponsorship programs. Find the right sponsor for your business with
+                    our Gold package, where we promise we will find you the right partner to spotlight alongside. Or get
+                    your name out there with social media and let our team of experts make your mark on the internet.
+                    Business changes all the time, so come to one of our seminars to keep up to date on the latest and
+                    greatest innovations here in Hawaii.</p>
+            </section>
+            <section>
+                <h2>Membership Levels</h2>
+                <ul>
+                    <li><b>Non-Profit</b> - $100 annual fee<br>
+                        Membership in the Chamber of Commerce, directory listing</b></li>
+                    <li><b>Bronze</b> - $200 annual fee<br>
+                        All of the above plus yearly business training.</b></li>
+                    <li><b>Silver</b> - $400 annual fee<br>
+                        All of the above plus social media posts, luncheon tickets, and sponsor exposure.</b></li>
+                    <li><b>Gold</b> - $1000 annual fee<br>
+                        All of the above plus VIP invitation to annual luncheon and valued sponsorships.</b></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Mililani Chamber of Commerce | <a href="attributions.html">Attributions</a>
+            | Sierra Angell</p>
+        <p>Last updated: <span id="mod"></span></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
             google: {
                 families: ["EB Garamond", "Montserrat"],
             },
         });
-        </script>
+    </script>
 </body>
 
 </html>
