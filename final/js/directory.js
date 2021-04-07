@@ -24,6 +24,7 @@ fetch(requestURL)
             logo.setAttribute('alt', places[i].name + ' logo');
             web.setAttribute('href', places[i].web);
             web.setAttribute('target', '_blank')
+            web.setAttribute('rel', "noopener")
 
             card.appendChild(h2);
             card.appendChild(logo);
