@@ -72,6 +72,7 @@ article {
     padding: 1.5rem;
     max-width: 500px;
     justify-items: center;
+    box-shadow: 3px 3px 5px grey;
 }
 
 article h2 a {
