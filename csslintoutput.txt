@@ -1,0 +1,33 @@
+
+main.css
+  1:1   ×  Unknown rule no-invalid-position-at-import-rule                              no-invalid-position-at-import-rule
+  1:1   ×  Unknown rule no-irregular-whitespace                                         no-irregular-whitespace           
+  2:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+  4:21  ×  Expected "#FAEBD7" to be "#faebd7"                                           color-hex-case                    
+  7:1   ×  Expected empty line before at-rule                                           at-rule-empty-line-before         
+ 20:10  ×  Expected "#6495ED" to be "#6495ed"                                           color-hex-case                    
+ 23:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+ 26:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+ 27:10  ×  Expected "#DEB887" to be "#deb887"                                           color-hex-case                    
+ 31:21  ×  Expected "#6495ED" to be "#6495ed"                                           color-hex-case                    
+ 35:1   ×  Expected selector "header a" to come before selector "a:hover"               no-descending-specificity         
+ 35:1   ×  Expected selector "header a" to come before selector "a:active"              no-descending-specificity         
+ 35:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+ 37:10  ×  Expected "#FAEBD7" to be "#faebd7"                                           color-hex-case                    
+ 39:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+ 43:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+ 44:10  ×  Expected "#DEB887" to be "#deb887"                                           color-hex-case                    
+ 46:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+ 47:10  ×  Expected "#FAEBD7" to be "#faebd7"                                           color-hex-case                    
+ 49:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+ 55:21  ×  Expected "#FAEBD7" to be "#faebd7"                                           color-hex-case                    
+ 67:1   ×  Expected selector "article h2 a" to come before selector "a:hover"           no-descending-specificity         
+ 67:1   ×  Expected selector "article h2 a" to come before selector "a:active"          no-descending-specificity         
+ 67:1   ×  Expected selector "article h2 a" to come before selector "header a:hover"    no-descending-specificity         
+ 67:1   ×  Expected selector "article h2 a" to come before selector "header a:active"   no-descending-specificity         
+ 67:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+ 71:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+ 72:10  ×  Expected "#6495ED" to be "#6495ed"                                           color-hex-case                    
+ 75:1   ×  Expected empty line before rule                                              rule-empty-line-before            
+ 76:10  ×  Expected "#DEB887" to be "#deb887"                                           color-hex-case
+

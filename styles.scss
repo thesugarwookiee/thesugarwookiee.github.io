@@ -1,0 +1,110 @@
+//variables to follow
+//colors
+$body-background-color: darkred;
+$form-background-color: white;
+$input-color: white;
+$headlines-color : white;
+//sizes
+$break-small: 20em;
+$break-medium: 31em;
+$break-large: 60em;
+
+//mixins
+@mixin flex-container($axis, $wrap: nowrap) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: $axis $wrap;
+    -ms-flex-flow: $axis $wrap;
+    flex-flow: $axis $wrap;
+}
+
+@mixin center {
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin breakpoint($break) {
+    @if $break==large {
+        @media (min-width: $break-large) {
+            @content;
+        }
+    }
+
+    @else if $break==medium {
+        @media (min-width: $break-medium) {
+            @content;
+        }
+    }
+
+    @else if $break==small {
+        @media (min-width: $break-small) {
+            @content;
+        }
+    }
+
+    @else {
+        @media ($break) {
+            @content;
+        }
+    }
+}
+
+
+//CSS stuff
+body {
+    background-color: $body-background-color;
+}
+
+#contactform {
+    background-color: $form-background-color;
+
+    input,
+    textarea {
+        background-color: $input-color;
+        flex: 2;
+    }
+
+    @media (min-width: $break-small) {
+        & {
+            width: 90%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: $break-large) {
+            & {
+                width: 70%;
+                max-width: 900px;
+            }
+        }
+    }
+}
+
+#contactform fieldset>div {
+    @include flex-container(column);
+
+    label {
+        flex: 1;
+        text-align: left;
+    }
+
+    @include breakpoint(medium) {
+        @include flex-container(row);
+        justify-content: space-between;
+        margin-bottom: 1em;
+
+        label {
+            text-align: right;
+            margin-right: 1em;
+        }
+    }
+}
+
+#content {
+    @include center;
+}

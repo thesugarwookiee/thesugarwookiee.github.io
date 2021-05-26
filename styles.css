@@ -1,0 +1,66 @@
+body {
+  background-color: darkred;
+}
+
+#contactform {
+  background-color: white;
+}
+#contactform input,
+#contactform textarea {
+  background-color: white;
+  flex: 2;
+}
+@media (min-width: 20em) {
+  #contactform {
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 20em) and (min-width: 60em) {
+  #contactform {
+    width: 70%;
+    max-width: 900px;
+  }
+}
+
+#contactform fieldset > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+#contactform fieldset > div label {
+  flex: 1;
+  text-align: left;
+}
+@media (min-width: 31em) {
+  #contactform fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  #contactform fieldset > div label {
+    text-align: right;
+    margin-right: 1em;
+  }
+}
+
+#content {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
