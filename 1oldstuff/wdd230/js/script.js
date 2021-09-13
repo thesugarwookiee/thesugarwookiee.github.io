@@ -10,6 +10,6 @@ function modified() {
 function load() {
     getYear();
     modified();
-  }
+}
 
 window.onload = load;
