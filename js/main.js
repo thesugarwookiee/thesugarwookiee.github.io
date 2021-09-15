@@ -3,12 +3,8 @@
     ol.setAttribute('id', 'linkList');
 
     const listLinks = [{
-            label: "Week One",
+            label: "Week One notes",
             url: 'week1/index.html'
-        },
-        {
-            label: "Week Two",
-            url: 'week2/index.html'
         }
     ];
 
