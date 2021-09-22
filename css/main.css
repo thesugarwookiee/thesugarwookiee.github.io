@@ -1,12 +1,12 @@
 html {
-    background-color: aquamarine;
+    background-color: rgb(197, 214, 224);
 }
 
 body {
     max-width: 900px;
     margin: 0 auto;
     background-color: aliceblue;
-    color: navy;
+    color: rgb(26, 26, 80);
     padding: 3rem;
     font-family: Arial, Helvetica, sans-serif;
 }
