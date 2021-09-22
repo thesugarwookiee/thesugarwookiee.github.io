@@ -3,10 +3,12 @@
     ol.setAttribute('id', 'linkList');
 
     const listLinks = [{
-            label: "Week One notes",
-            url: 'week1/index.html'
-        }
-    ];
+        label: "Week One notes",
+        url: 'week1/index.html'
+    }, {
+        label: "Week Two notes",
+        url: 'week2/index.html'
+    }];
 
     document.getElementById('createList').appendChild(ol);
     listLinks.forEach(createassignmentList);
