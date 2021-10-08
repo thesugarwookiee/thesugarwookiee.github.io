@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Week Four | WD330</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week Three of WDD330.">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <nav><a href="../index.html">Home</a></nav>
+    <h1>Notes</h1>
+    <hr>
+    <h2>Team Activity - Tic Tac Toe</h2>
+    <div class="code">
+        <div class="container">
+            <div class="play-area" id="play-area">
+
+                <div class="block" id="block_0" data-index="0"></div>
+                <div class="block" id="block_1" data-index="1"></div>
+                <div class="block" id="block_2" data-index="2"></div>
+                <div class="block" id="block_3" data-index="3"></div>
+                <div class="block" id="block_4" data-index="4"></div>
+                <div class="block" id="block_5" data-index="5"></div>
+                <div class="block" id="block_6" data-index="6"></div>
+                <div class="block" id="block_7" data-index="7"></div>
+                <div class="block" id="block_8" data-index="8"></div>
+
+            </div>
+
+            <h2 id="winner"></h2>
+            <button onclick="resetBoard()">Reset Board</button>
+        </div>
+
+    </div>
+    <h2>Novice to Ninja, Chapter 8</h2>
+    <ul>
+        <li>While it's not unusual to send data in a form through PHP for processing, you can also process information
+            in Javascript before sending it to the backend. </li>
+        <li>The legacy DOM had a useful property calleddocument.formsthat returns an HTML collection of all the forms in
+            the document in the order they appear in the markup.</li>
+        <li>const form = document.forms[0]; AND const form = document.getElementsByTagname('form')[0]; AND const form =
+            document.forms.search; AND const form = document.forms['search']; are all referencing the same thing. (ie
+            the 'search' form that is the first and only
+            form in the example)</li>
+        <li>If the input field has a name attribute ofsearchInputand can be accessed using this code: const input =
+            form.searchInput;</li>
+        <li>Theform.reset()method will reset all the form controls back to their initial values specified in the HTML.
+        </li>
+        <li>Focus even happens upon focus. Blur event happen upon removal of focus. Change even happens after you've
+            changed the element and moved away. Blur fires after Change (if both present.)</li>
+        <li>Default input values are fine imo if you need at least a default input when submitting, but otherwise I'd
+            use placeholder.</li>
+        <li>There are lots of input field types, from text to password to buttons and so forth. Look them up if you need
+            them.</li>
+        <li>checkboxes and radios in the same series need to have the same 'name' but different 'values'.</li>
+        <li>hero.powers = [...form.powers].filter(box => box.checked).map(box => box.value);</li>
+        <li>Validation can occur on the client side using JavaScript, and on the server side. It is advisable to use
+            both client-side and server-side validation. JavaScript should not be relied upon to validate any data
+            before it’s saved to a database.</li>
+        <li>You can disable the submit button so they user can't submit with errors.</li>
+    </ul>
+    <h2>Chapter 12</h2>
+    <ul>
+        <li>There are three main concepts in OOP: encapsulation, polymorphism and inheritance.</li>
+        <li>Encapsulation: the inner workings are kept hidden inside the object and only the essential functionalities
+            are exposed to the end user. IE - juicer takes fruit, makes juice, user doesn't see the inner workings.
+        </li>
+        <li>Polymorphism: the same process can be used for different objects. IE - Juicer connects to same power as
+            other appliances and can also juice more than one kind of fruit.</li>
+        <li>Inheritance: taking the features of one object then adding some new features. IE - A new juicer with all the
+            old components with new ones added.</li>
+        <li>Can build objects as object literals or constructor functions. Now you can also use Class.</li>
+        <li>What’s the difference between an object's own properties and prototype properties? Prototype properties
+            are shared by every instance of the Turtleclass. This means they’ll all have a weaponproperty, and it will
+            always be the same value.</li>
+        <li>The prototypeobject is live, so if a new property or method is added to the prototype, any instances of its
+            class will inherit the new properties and methods automatically, even if that instance has already been
+            created.</li>
+        <li>When a property or method is called, the JavaScript engine will check to see if an object has its own
+            property or method. If it does, it will use that one; otherwise, it will continue up the prototype chain
+            until it finds a match or reaches the top of the chain.</li>
+        <li>Properties of objects in JavaScript are said to beenumerableornon-enumerable. If they aren't enumerable,
+            this means they will not show up when afor-inloop is used to loop through an object’s properties and
+            methods.</li>
+        <li>Good practice is for all built-in methods to be non-enumerable, and any user-defined methods to be made
+            enumerable. This is so all the built-in methods don’t keep showing up when looking at an object’s methods,
+            but user-defined methods are easy to find.</li>
+        <li>You can add to a class with the keyword 'extends' in order to make a class even more specialized.</li>
+        <li>One example of a function that uses the toString()method is the console.log()method. If an object is given
+            as
+            an argument to this method that isn’t a string, it will call toString()on that object in the background and
+            display the return value in the console. </li>
+        <li>It’s possible to avoid using classes altogether, and create new objects based on another object that acts as
+            a 'blueprint' or prototype instead.</li>
+        <li><img src="https://learnable-static.s3.amazonaws.com/premium/reeedr/books/javascript-novice-to-ninja-2nd-edition/images/ch12hero-prototype-chain.png"
+                alt="prototype diagram"></li>
+        <li>Because of this chain, the supermanobject has all the properties and methods of the Human and Superhuman
+            objects</li>
+        <li>If a method returns this, its methods can be chained together to form a sequence of method calls that are
+            called one after the other: superman.fly().move().xray();</li>
+        <li>It’s worth keeping in mind that if a method lacks a meaningful return value, it might as well return this so
+            that chaining is possible.</li>
+        <li>Note to self, use for-of instead of forEach when working with arrays in particlar to avoid needing to bind
+            'this'. or else use arrows. arrow functions should be used when anonymous functions are required in
+            callbacks</li>
+    </ul>
+    <h2>Chapter 15</h2>
+    <ul>
+        <li>A module is a self-contained piece of code that provides functions and methods that can then be used in
+            other files and by other modules. </li>
+        <li> Keeping code modular helps to make it moreloosely coupledand interchangeable, meaning you can easily swap
+            one module for another without affecting other parts of a project. </li>
+        <li>All code in modules is always in strict mode without the need for 'use strict' and there is no way to opt
+            out of this.</li>
+        <li>The scope of the module is itself and no higher.</li>
+        <li>use keyword export within the module and import within the main js file using it.</li>
+        <li>you don't have to export or import all parts of the module, you can select what you need on either end. or
+            you can wildcard for them all!</li>
+    </ul>
+    <script src="app.js"></script>
+</body>
+
+</html>

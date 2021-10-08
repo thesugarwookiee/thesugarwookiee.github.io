@@ -11,6 +11,10 @@
     }, {
         label: "Week Three notes",
         url: 'week3/index.html'
+    },
+    {
+        label: "Week Four notes",
+        url: 'week4/index.html'
     }];
 
     document.getElementById('createList').appendChild(ol);
