@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Week Five | WD330</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week Five of WDD330.">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <nav><a href="../index.html">Home</a></nav>
+    <h1>Notes</h1>
+    <hr>
+    <h2>Novice to Ninja: Chapter 10</h2>
+    <ul>
+        <li>Errors can be caused by the system, the programmer, or the user.</li>
+        <li>As programmers we have little control over system errors but should be aware of them in order to avoid them
+            as best we can.</li>
+        <li>While we are directly responsible for programmer errors, we should make efforts to minimize user errors. We
+            can do this through clarity and restrictions that prevent unwanted behavior without limiting necesary input.
+        </li>
+        <li>An exception is an error that produces a return value that can then be used by the program to deal with the
+            error. It will also produce a stack trace, which is a sequence of methods or functions that lead to the
+            point of the error.</li>
+        <li>Warnings aren't enough to cause the system to crash, but they can cause the program to run incorrectly and
+            should be fixed.</li>
+        <li>HTML will still run even if javascript has stopped, so logs should be checked to ensure function.</li>
+        <li>Failing silently makes errors difficult to spot and longer to track down. Javascript is good at this. A
+            ninja programmer should ensure that the code they write fails loudly in development so any errors can be
+            identified early on.</li>
+        <li>Strict mode increases errors by countering questionable practices. Strict mode simply requires 'use strict';
+            to be added to the first line of the js file</li>
+        <li>In strict mode you might get an exception where you might have otherwise gotten a warning.</li>
+        <li>You can also apply strict mode within a specific function and it will only be used in that scope.</li>
+        <li>Linting tools are useful for highlighting sloppy programming, but can also be overly opinionated. They are
+            most useful for when you have a style guide to follow as a team.</li>
+        <li>Lint does not ensure that your code is correct, per se, but it does make sure it's consistent.</li>
+        <li>When you can't be sure a feature you are programming is available in a browser or other things you can't
+            control, an 'if' statement can be used to check and only fire the code if it is available. Then it can fail
+            gracefully instead of breaking.</li>
+        <li>Alerts used to be used for debugging javascript exclusively, but we have better tools now.</li>
+        <li>console.log() along with the console is one of the quickest ways to debug in the browser.</li>
+        <li>the console.trace() method will log an interactive stack trace in the console. This will show the functions
+            that were called in the lead up to an exception occurring while the code is running.</li>
+        <li>console.table() is also very helpful for looking at arrays or objects in an organized way.</li>
+        <li>console.count() counts how many times a function was called.</li>
+        <li>The 'debugger' keyword puts a breakpoint into your code where you can pause and observe. Just remember to
+            remove any of these later!</li>
+        <li>It’s possible to throw your own exceptions using the throw statement.</li>
+        <li>You can 'throw' anything and it will cause the program to stop, but it's best to throw a clear error.</li>
+        <li>It is possible to handle exceptions gracefully by catching the error. Any errors can be hidden from users,
+            but still identified. We can then deal with the error appropriately ― perhaps even ignore it ― and keep the
+            program running.</li>
+        <li>If we suspect a piece of code will result in an exception, we can wrap it in a try block. This will run the
+            code inside the block as normal, but if an exception occurs it will pass the error object that is thrown
+            onto a catch block.</li>
+        <li>finally will fire after a try or catch block regardless of if an exception was caught. This is for anything
+            you want to have run regardless of the other outcome.</li>
+        <li>Test-driven development(TDD) is the process of writing tests before any actual code. This is considered best
+            practice but can be difficult to get into the mindset of, so it's not always popular.</li>
+        <li>There are also frameworks that you can use to help to test, like Jest, but you have to install them to use
+            them.</li>
+    </ul>
+    <h2>Team Activity</h2>
+    <a href="team.html">Great Hikes</a> - organized into modular type files and using import/export as a team, click
+    'tiles' for more information
+</body>
+
+</html>
