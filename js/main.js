@@ -19,6 +19,10 @@
         {
             label: "Week Five notes",
             url: 'week5/index.html'
+        },
+        {
+            label: "Week Six To-Do",
+            url: 'week6/index.html'
         }
     ];
 

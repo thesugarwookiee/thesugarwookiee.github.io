@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+:root {
+    --primary-color: #e4c124;
+    --accent1-color: #3f8f84;
+    --accent2-color: #b4dfd0;
+    --accent3-color: #dbcf62;
+    --paragraph-font: 'IBM Plex Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 500px;
+    margin: 2rem auto;
+    font-family: var(--paragraph-font);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    padding: 15px 8px 15px 42px;
+    background: var(--accent1-color);
+    font-size: 18px;
+    list-style: none;
+}
+
+ul li:nth-child(odd) {
+    background: var(--accent2-color);
+}
+
+ul li:hover {
+    background: var(--primary-color);
+}
+
+ul li.done {
+    background: var(--accent3-color);
+    text-decoration: line-through;
+}
+
+ul li.done::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 3px 3px 0;
+    top: 15px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.deleter {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 20px 15px 10px;
+}
+
+.deleter:hover {
+    background-color: var(--primary-color);
+}
+
+.top {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+input {
+    margin: 0;
+    border: 2px solid var(--accent1-color);
+    width: 85%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+#status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all, .complete, .active, .counter {
+    padding: 1rem;
+}
+
+.all:hover,
+.complete:hover,
+.active:hover {
+    background-color: var(--accent1-color);
+}
+
+button {
+    border-radius: 0;
+    background-color: white;
+    border: 0;
+    font-family: var(--paragraph-font);
+}
+
+
+.add {
+    padding: 8px;
+    width: 15%;
+    background: var(--accent1-color);
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.add:hover {
+    background-color: var(--accent2-color);
+}

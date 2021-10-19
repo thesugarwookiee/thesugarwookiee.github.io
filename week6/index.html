@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>To-do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="To-do Javascript List.">
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <main>
+        <div class="top">
+            <h2>Do These</h2>
+        </div>
+
+        <ul id="taskList" class="tasklist">
+            <li>Put together html</li>
+            <li class="done">Clean up CSS</li>
+            <li>Start JavaScript</li>
+            <li>Fiddle for hours</li>
+            <li>Lose your mind because you can't figure it out</li>
+        </ul>
+        <div id="status" class="filter" onclick="filter(event)"><span class="counter"><span id="remaining"></span> Tasks
+                Left</span> <button class="all" value="all">All</button> <button class="active"
+                value="active">Active</button> <button class="complete" value="complete">Complete</span></div>
+        <input type="text" id="myTask" placeholder="Add...">
+        <span onclick="newTask()" class="add">+</span>
+    </main>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
