@@ -13,7 +13,7 @@ function newTask() {
     var exx = document.createTextNode("x");
     span.className = "deleter";
     span.appendChild(exx);
-    li.appendChild(span);
+    li.appendChild(span)
 
     for (i = 0; i < deleted.length; i++) {
         deleted[i].onclick = function () {

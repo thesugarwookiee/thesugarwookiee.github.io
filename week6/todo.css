@@ -26,22 +26,22 @@ ul {
 ul li {
     position: relative;
     padding: 15px 8px 15px 42px;
-    background: var(--accent1-color);
+    background: var(--accent2-color);
     font-size: 18px;
     list-style: none;
 }
 
-ul li:nth-child(odd) {
-    background: var(--accent2-color);
-}
-
 ul li:hover {
-    background: var(--primary-color);
+    background: var(--accent1-color);
 }
 
 ul li.done {
     background: var(--accent3-color);
     text-decoration: line-through;
+}
+
+ul li.done:hover {
+    background-color: var(--primary-color);
 }
 
 ul li.done::before {
