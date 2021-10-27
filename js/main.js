@@ -21,8 +21,12 @@
             url: 'week5/index.html'
         },
         {
-            label: "Week Six To-Do",
+            label: "To Do Challenge",
             url: 'week6/index.html'
+        },
+        {
+            label: "Week Seven notes",
+            url: 'week7/index.html'
         }
     ];
 

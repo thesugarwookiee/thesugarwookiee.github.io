@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Week Seven | WD330</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week Seven of WDD330.">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <nav><a href="../index.html">Home</a></nav>
+    <h1>Notes</h1>
+    <hr>
+    <h2>Novice to Ninja: Chapter 11</h2>
+    <ul>
+        <li>All functions have a length property that returns the number of parameters the function has.</li>
+        <li>The call() method can be used to set the value of this inside a function to an object that is provided as
+            the first argument.</li>
+        <li>If a function doesn’t refer to an object as this in its body, it can still be called using the call()
+            method, but you need provide null as its first argument.</li>
+        <li>With apply() you can pass an array the same way, but it's less necessary with the ability to use spread
+            these days.</li>
+        <li>You can make custom properties such as item.description = "this is the description of the object".</li>
+        <li>You can cache function returns to provide them faster in the future if the same arguments are provided.</li>
+        <li>You can place temporary variables inside of Immediately Invoked Function Expressions in order to make sure
+            they don't stick around when you don't want them anymore.</li>
+        <li>IIFE seem to be less necessary or even useful in current javascript, thought, as there are now easier ways
+            to do the same things.</li>
+        <li>You can have a function redefine itself by assigning an anonymous function to a variable that has the same
+            name as the function. Any variable assigned the function will keep the original and not be rewritten for
+            fresh use later.</li>
+        <li>A recursive function is one that invokes itself until a certain condition is met.</li>
+        <li>JavaScript is a single-threaded environment, which means only one piece of code will ever be processed at a
+            time.</li>
+        <li>setTimeout() is good for pushing a function out of the stack and to wait until the stack is cleared to run
+            to prevent hangups.</li>
+        <li><a href="http://callbackhell.com/">Callback Hell</a></li>
+        <li>A promise is created using a constructor function. This takes a function called an executor as an argument.
+            The executor initializes the promise and starts the asynchronous operation. It also accepts two functions as
+            arguments: the resolve() function is called if the operation is successful, and the reject() function is
+            called if the operation fails.</li>
+        <li>async function loadGame(userName) -- load this with a try catch.</li>
+        <li>Functions can return functions. </li>
+        <li><img src="callfunction.png" alt="how returning a function from a function can work to customize a function">
+        </li>
+        <li> whenever a function is defined inside another function, the inner function will have access to any
+            variables that are declared in the outer function's scope.</li>
+        <li>A closure doesn't just have access to the value of a variable, it can also change the value of the variable
+            long after the function in which it was originally declared has been invoked.</li>
+    </ul>
+    <h2>Chapter 13</h2>
+    <ul>
+        <li>Ajax allows JavaScript to request resources from a server on behalf of the client.</li>
+        <li>The most commonly used in Ajax nowadays is JSON.</li>
+        <li>Fetch API is currently a living standard for requesting and sending data asynchronously across a network.
+        </li>
+        <li>The redirect() method can be used to redirect to another URL. It creates a new promise that resolves to the
+            response from the redirected URL.</li>
+        <li>The text() method takes a stream of text from the response, reads it to completion and then returns a
+            promise that resolves to a USVSting object that can be treated as a string in JavaScript.</li>
+        <li>The blob() method is used to read a file of raw data, such as an image or a spreadsheet. Once it has read
+            the whole file, it returns a promise that resolves with a blob object.</li>
+        <li>JSON objects can be manipulated with javascript after being called.</li>
+        <li>Typical information contained in headers includes the file-type of the resource, cookie information,
+            authentication information and when the resource was last modified.</li>
+        <li>has() – Can be used to check if the headers object contains the header provided as an argument.</li>
+    </ul>
+    <h2>Team Activity</h2>
+    <ul><li><a href="team.html">Great Hikes</a> - Now with localstorage support!</li></ul>
+</body>
+
+</html>
