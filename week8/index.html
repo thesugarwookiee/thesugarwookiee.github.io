@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Week Eight | WD330</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week Eight of WDD330.">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <nav><a href="../index.html">Home</a></nav>
+    <h1>Notes</h1>
+    <hr>
+    <h2>HTML5 and CSS3 For the Real World: Chapter 8</h2>
+    <ul>
+        <li>The CSS3 transform property lets you lets you translate, rotate, scale, and/or skew any element on the page.
+        </li>
+        <li>The value of the transform property is one or more transform functions (separated by spaces) that will be
+            applied in the order they’re provided.</li>
+        <li>Translation functions allow you to move elements left, right, up, or down. A translated element can only be
+            moved relative to its current position.</li>
+        <li>Transforms don’t work on inline elements, so change it to block if it's not working.</li>
+        <li>The scale(x,y) function scales an element by the defined factors horizontally then vertically.</li>
+        <li>Remember that scale will not affect the flow of elements around it, so if that's an issue change other
+            aspects instead of using scale such as height, width, or font size.</li>
+        <li>The rotate() function rotates an element around the point of origin by a specified angle value.</li>
+        <li>The skew(x,y) function specifies a skew along the x and y axes.</li>
+        <li>transform-origin is used to change the origin of the transformation away from center of the object.</li>
+        <li>The order of transform functions does matter: if you rotate before translating, your translate direction
+            will be on the rotated axis.</li>
+        <li>CSS transitions generally require less client-side processing than javascript, so they’ll usually appear
+            smoother, which is very important on mobile.</li>
+        <li>Transitions allow the values of CSS properties to change over time, essentially providing simple animations.
+        </li>
+        <li><img src="steps.png" alt="steps to make transition happen"></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">Animatable properties</a>
+        </li>
+        <li>In itself, the transition-property property has no effect; that’s because we still need to specify the
+            duration of the transition.</li>
+        <li>200ms is generally considered the optimum time for a transition: anything slower will make the website seem
+            slow, drawing generally unwanted attention to what was supposed to be a subtle effect. Anything faster may
+            be too subtle.</li>
+        <li>The most common timing functions include the key terms ease, linear, ease-in, ease-out, or ease-in-out.</li>
+        <li>These properties can all be placed into shorthand transition property. The properties in the shorthand
+            syntax can be in any order, however, if a delay is included, you must also include a duration, and the
+            duration must precede the delay.</li>
+        <li>You can transition multiple properties at once, separated by a comma, or using 'all' if all will be the same
+            duration.</li>
+        <li>For true CSS animation, use keyframes. Keyframes are declared in percentages of the duration. Declare your
+            duration or it defaults to 0 and nothing will happen.</li>
+        <li>If using the shorthand property, be careful with your animation-name. You want to avoid accidentally using
+            any animation property key term such as forwards, running, or alternate. </li>
+    </ul>
+    <h2>Chapter 12</h2>
+    <ul>
+        <li>With HTML5’s Canvas API you can draw anything you can imagine through JavaScript.</li>
+        <li>The canvas element takes both a width and height attribute, which must also be set, and should not be set in
+            CSS.</li>
+        <li>A lot can be done with Canvas, making shapes and using patterns and fills. Look them up when you need to use
+            it, there's lot of resources out there.</li>
+        <li>You can use Canvas to put a picture onto a site and also convert it to black and white. You could also do
+            this with video.</li>
+        <li>A major downside of canvas in its current form is its lack of accessibility. The canvas doesn’t create a DOM
+            node, is not a text-based format, and is thus essentially invisible to tools such as screen readers.</li>
+        <li>SVG stands for Scalable Vector Graphics, a specific file format that allows you to describe vector graphics
+            using XML.</li>
+        <li>The viewBox attribute defines the starting location, width, and height of the SVG image.</li>
+        <li>The element in SVG is often the name of the shape, such as 'circle'. [circle cx="50" cy="50" r="25"
+            fill="red"/]</li>
+        <li>A 'desc' tag will let you add a description to your SVG viewBox</li>
+        <li>Drag and drop API is very useful but has limited support so far.</li>
+        <li>These API options are worth looking into when the functions become necessary in a site but should not be
+            used frivolously, I don't think.</li>
+    </ul>
+    <h2>Team Activity</h2>
+    <ul>
+        <li><a href="api.html">Ship Cards from API</a> -- Click on the tiles to see more information about these ships!
+        </li>
+    </ul>
+</body>
+
+</html>

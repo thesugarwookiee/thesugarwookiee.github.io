@@ -27,6 +27,10 @@
         {
             label: "Week Seven notes",
             url: 'week7/index.html'
+        },
+        {
+            label: "Week Eight notes",
+            url: 'week8/index.html'
         }
     ];
 

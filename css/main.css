@@ -49,6 +49,7 @@ img {
     margin: 0 auto;
     display: block;
     padding: 2rem;
+    max-width: 750px;
 }
 
 /* tic tac toe  */
