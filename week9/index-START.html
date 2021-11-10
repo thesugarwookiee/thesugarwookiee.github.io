@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <script>
+    const sounds = {
+      "65": { sound: new Audio('./sounds/clap.wav'), timesPlayed: 0 },
+      "83": { sound: new Audio('./sounds/hihat.wav'), timesPlayed: 0 },
+      "68": { sound: new Audio('./sounds/kick.wav'), timesPlayed: 0 },
+      "70": { sound: new Audio('./sounds/openhat.wav'), timesPlayed: 0 },
+      "71": { sound: new Audio('./sounds/boom.wav'), timesPlayed: 0 },
+      "72": { sound: new Audio('./sounds/ride.wav'), timesPlayed: 0 },
+      "74": { sound: new Audio('./sounds/snare.wav'), timesPlayed: 0 },
+      "75": { sound: new Audio('./sounds/tom.wav'), timesPlayed: 0 },
+      "76": { sound: new Audio('./sounds/tink.wav'), timesPlayed: 0 },
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const { sound, timesPlayed } = sounds[e.keyCode]
+      if (sound) {
+        const element = document.querySelector(`[data-key="${e.keyCode}"]`)
+        sounds[e.keyCode].timesPlayed += 1
+        element.classList.add('playing')
+        element.style.transform = `translate(0, ${ ((timesPlayed + 1) % 10) * 10 }px)`
+        sound.currentTime = 0
+        sound.play()
+        sound.addEventListener('ended', () => {
+          element.classList.remove('playing')
+        })
+      }
+    })
+  </script>
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+</body>
+</html>
