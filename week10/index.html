@@ -13,17 +13,69 @@
     <nav><a href="../index.html">Home</a></nav>
     <h1>Notes</h1>
     <hr>
-    <h2>Novice to Ninja: Chapter 9</h2>
+    <h2>MDN: Validating Forms</h2>
     <ul>
-        <li></li>
+        <li>Client side validation makes sure the form information is valid BEFORE sending any information to the
+            server.</li>
+        <li>Doing this allows the user to fix the issue straight away, and allows the programmer to give the user
+            information on how to fix any errors specifically.</li>
+        <li>Client side validation is very easy to bypass, so it should not be the only security measure. Even I have a
+            'no validation' markup on my computer for testing server side validation. It's very easy to turn 'off' the
+            javascript that controls client-side validation.</li>
+        <li>It's all about getting the right data as well as protecting the user and the server.</li>
+        <li>There are plenty of built in form validations in the current era of browsers. required, maxlength, :valid,
+            and pattern are examples of these.</li>
+        <li>I've actually done a ton of this this semester in CSE 340!</li>
+        <li>RegEx is a small nightmare but absolutely useful. Look up tools to help generate the patterns as required.
+            Textarea doesn't support pattern, as a note.</li>
+        <li>You must use JavaScript if you want to take control over the look and feel of native error messages.</li>
+        <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation">Constraint Validation
+                API</a> is available in most browsers and provides some solid helps.</li>
+        <li>setCustomValidity() seems especially useful for taking a standard error and making it your own.</li>
+        <li>email.addEventListener("input", function (event) {<br>
+            if (email.validity.typeMismatch) {<br>
+            email.setCustomValidity("I am expecting an e-mail address!");<br>
+            } else {<br>
+            email.setCustomValidity("");<br>
+            }<br>
+            });</li>
+        <li>The above can look for other types of errors, too, like missing input or too short and go through and else
+            if to pick the 'first' one to fix. The order of these statements is something to think about.</li>
+        <li>Plenty can be done without the API as well but if it's there to use, why not. The Javascript has to get more
+            hefty without it.</li>
     </ul>
-    <h2>Chapter 14</h2>
+    <h2>MDN: Using Fetch</h2>
     <ul>
-        <li></li>
+        <li>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline,
+            such as requests and responses. It also provides a global fetch() method.</li>
+        <li>The Promise returned from fetch() won’t reject on HTTP error status even if the response is an HTTP 404 or
+            500.</li>
+        <li>fetch('http://example.com/movies.json')<br>
+            .then(response => response.json())<br>
+            .then(data => console.log(data));
+        </li>
+        <li>The fetch() method can optionally accept a second parameter, an init object that allows you to control a
+            number of different settings</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch">Much more info on fetch()</a></li>
+        <li>async function postData(url = '', data = {})<br><br>
+            postData('https://example.com/answer', { answer: 42 })</li>
+        <li>Use fetch() to POST JSON-encoded data.</li>
+        <li>It can be used to upload files.</li>
+        <li>The chunks that are read from a response are not broken neatly at line boundaries and are Uint8Arrays, not
+            strings. If you want to fetch a text file and process it line by line, it is up to you to handle these
+            complications.</li>
+        <li>You should check if the fetch() is successful or not and throw an error if there is one.</li>
+        <li>Instead of passing a path to the resource you want to request into the fetch() call, you can create a
+            request object using the Request() constructor, and pass that in as a fetch() method argument.</li>
+        <li>const anotherRequest = new Request(myRequest, myInit); // this allows you to make a copy of the object which
+            is useful as the bodies are one use only. </li>
+        <li>Response instances are returned when fetch() promises are resolved.</li>
+        <li>Response.status, Response.statusText, Response.ok are the most common response properties.</li>
     </ul>
     <h2>Team Activity</h2>
     <ul>
-        <li><a href="quakes/quakes.html">Quakes</a> -- I had to up the base radius to 250 up from 100 in the code in order to see anything from my location, but she works!
+        <li><a href="quakes/quakes.html">Quakes</a> -- I had to up the base radius to 250 up from 100 in the code in
+            order to see anything from my location, but she works!
         </li>
     </ul>
 </body>
