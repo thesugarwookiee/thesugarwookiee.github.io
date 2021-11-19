@@ -1,0 +1,33 @@
+body {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#quakeList {
+    padding: 1rem;
+}
+
+.gridboy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.place {
+    font-weight: bolder;
+}
+
+.time {
+    grid-column: 1/3;
+    color: rgb(54, 54, 128);
+}
+
+.mag {
+    justify-self: end;
+    color: rgb(145, 39, 39);
+}
+
+h1 {
+    padding: 2rem;
+}
