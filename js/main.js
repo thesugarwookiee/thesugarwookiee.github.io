@@ -39,6 +39,10 @@
         {
             label: "Week Ten notes",
             url: 'week10/index.html'
+        },
+        {
+            label: "Final Application",
+            url: 'final/index.html'
         }
     ];
 

@@ -1,0 +1,90 @@
+body {
+    width: 600px;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.board {
+    height: 550px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.board .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    height: 100%;
+}
+
+.board-square {
+    border: 2px solid #F7F7F7;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.face-container {
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: 400ms;
+}
+
+.faceup,
+.facedown {
+    height: 50%;
+}
+
+.facedown {
+    background-image: url("yaho.png");
+    background-color: #0a0101;
+    height: 135px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flipped .face-container {
+    top: -100%;
+}
+
+/* colors */
+
+.color-0 {
+    background-color: aqua;
+}
+
+.color-1 {
+    background-color: bisque;
+}
+
+.color-2 {
+    background-color: blue;
+}
+
+.color-3 {
+    background-color: blueviolet;
+}
+
+.color-4 {
+    background-color: brown;
+}
+
+.color-5 {
+    background-color: cadetblue;
+}
+
+.color-6 {
+    background-color: chartreuse;
+}
+
+.color-7 {
+    background-color: coral;
+}
