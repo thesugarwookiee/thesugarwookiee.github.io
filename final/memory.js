@@ -1,164 +1,189 @@
+//make the board
 function generateHTMLForBoardSquares() {
     const numberOfSquares = 16;
     let squaresHTML = '';
 
-    // generate HTML for board squares
+    // make the board with a loop
     for (let i = 0; i < numberOfSquares; i++) {
         squaresHTML +=
-            '<div class="board-square">\n' +
-            '<div class="face-container">\n' +
-            '<div class="facedown"></div>\n' +
-            '<div class="faceup"></div>\n' +
+
+            '<div class="square">\n' +
+            '<div class="card">\n' +
+            '<div class="flipdown"></div>\n' +
+            '<div class="flipup"></div>\n' +
             '</div>\n' +
             '</div>\n';
-    }
 
-    // insert squares HTML in DOM
+    }
+    //make the board write to the html
     const boardElement = document.getElementById('gameboard');
     boardElement.innerHTML = squaresHTML;
 }
 
 generateHTMLForBoardSquares();
 
+//board square interactions
 class BoardSquare {
 
+    //set the foundation
     constructor(element, color) {
         this.element = element;
 
 
         this.element.addEventListener("click", this, false);
 
-        this.isFaceUp = false;
+        this.isFlipUp = false;
         this.isMatched = false;
         this.setColor(color);
     }
 
+    //'flip' when clicked by adding class
     handleEvent(event) {
         switch (event.type) {
             case "click":
-                // 1
-                if (this.isFaceUp || this.isMatched) {
-                    // 2
+                if (this.isFlipUp || this.isMatched) {
                     return;
                 }
 
-                // 3
-                this.isFaceUp = true;
+                this.isFlipUp = true;
                 this.element.classList.add('flipped');
 
-                // 4
                 squareFlipped(this);
         }
     }
 
+    //turn it back over if it's not a match
     reset() {
-        this.isFaceUp = false;
+        this.isFlipUp = false;
         this.isMatched = false;
         this.element.classList.remove('flipped');
     }
 
+    //find your matches and keep them
     matchFound() {
-        this.isFaceUp = true;
+        this.isFlipUp = true;
         this.isMatched = true;
     }
 
+    //add the color to the square as you flip it
     setColor(color) {
-        const faceUpElement = this.element.getElementsByClassName('faceup')[0];
+        const flipUpElement = this.element.getElementsByClassName('flipup')[0];
+
+        flipUpElement.classList.remove(this.color);
+
         this.color = color;
-        faceUpElement.classList.add(color);
+        flipUpElement.classList.add(color);
     }
 }
 
+//make pairs of colors
 const colorPairs = [];
 
 function generateColorPairs() {
     if (colorPairs.length > 0) {
         return colorPairs;
     } else {
-        // generates matching pair for each color
         for (let i = 0; i < 8; i++) {
-            colorPairs.push('color-' + i);
-            colorPairs.push('color-' + i);
+            colorPairs.push('color' + i);
+            colorPairs.push('color' + i);
         }
-
         return colorPairs;
     }
 }
 
+//mix up the array of squares
 function shuffle(array) {
     let currentIndex = array.length;
     let temporaryValue, randomIndex;
 
-    // While there remain elements to shuffle...
+    //very useful random function time
     while (0 !== currentIndex) {
-        // Pick a remaining element...
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
 
-        // And swap it with the current element.
         temporaryValue = array[currentIndex];
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
     }
-
     return array;
 }
 
-function shuffleColors() {
+//shuffle up the colored squares with the separate functions
+function shuffleMatches() {
     const colorPairs = generateColorPairs()
     return shuffle(colorPairs);
 }
 
+//make the game appear and function
 const boardSquares = [];
 
 function setupGame() {
     generateHTMLForBoardSquares();
 
-    const randomColorPairs = shuffleColors();
-    // 1
-    const squareElements = document.getElementsByClassName("board-square");
+    const randomColorPairs = shuffleMatches();
+    const squareElements = document.getElementsByClassName("square");
 
-    // 2
     for (let i = 0; i < squareElements.length; i++) {
         const element = squareElements[i];
         const color = randomColorPairs[i];
-        // 3
         const square = new BoardSquare(element, color)
 
-        // 4
         boardSquares.push(square);
     }
 }
 
-setupGame(); // DO NOT ERASE THIS OR GAME WILL NOT RUN
+setupGame();
 
-// 1
-let firstFaceupSquare = null;
+//flip squares and check for 'first' and matches to determine whether or not to flip it back over
+let firstFlipupSquare = null;
 
 function squareFlipped(square) {
-  // 2
-  if (firstFaceupSquare === null) {
-    firstFaceupSquare = square;
-    return
-  }
+    if (firstFlipupSquare === null) {
+        firstFlipupSquare = square;
+        return
+    }
+    if (firstFlipupSquare.color === square.color) {
+        firstFlipupSquare.matchFound();
+        square.matchFound();
 
-  // 3
-  if (firstFaceupSquare.color === square.color) {
-    // 4
-    firstFaceupSquare.matchFound();
-    square.matchFound();
+        firstFlipupSquare = null;
+    } else {
+        const a = firstFlipupSquare;
+        const b = square;
 
-    firstFaceupSquare = null;
-  } else {
-    // 5
-    const a = firstFaceupSquare;
-    const b = square;
+        firstFlipupSquare = null;
 
-    firstFaceupSquare = null;
+        setTimeout(function () {
+            a.reset();
+            b.reset();
+        }, 600);
+    }
+}
 
-    setTimeout(function() {
-      a.reset();
-      b.reset();
-    }, 400);
-  }
+//reset the game
+const resetButton = document.getElementById("reset-button");
+
+resetButton.addEventListener('click', () => {
+    resetGame();
+});;
+
+function resetGame() {
+    firstFlipupSquare = null;
+
+    boardSquares.forEach((square) => {
+        square.reset()
+    });
+
+    setTimeout(() => {
+
+        const randomColorPairs = shuffleMatches();
+
+        //change the colors of the pairs
+        for (let i = 0; i < boardSquares.length; i++) {
+            const newColor = randomColorPairs[i];
+            const square = boardSquares[i];
+
+            square.setColor(newColor);
+        }
+    }, 500);
 }

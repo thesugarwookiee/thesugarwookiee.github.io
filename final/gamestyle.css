@@ -1,7 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    background-color: black;
+}
+
 body {
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
-    padding: 4rem;
+    padding: .5rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    background-color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.reward {
+    padding:  3rem 0 0 3rem;
+}
+
+.score, #reset-button {
+    font-size: 1.5rem;
+}
+
+.score {
+    padding: 0 3rem;
+    margin: -2rem auto;
+}
+
+#reset-button {
+    margin: 0 auto;
+    width: 550px;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#reset-button:hover {
+    background-color: rgb(241, 190, 50);
+    color: black;
+    
 }
 
 h1 {
@@ -21,28 +61,34 @@ h1 {
     height: 100%;
 }
 
-.board-square {
+.square {
     border: 2px solid #F7F7F7;
     height: 100%;
     padding: 0;
     overflow: hidden;
     position: relative;
+    border-radius: 1rem;
 }
 
-.face-container {
+.square:hover {
+    border: 2px solid rgb(241, 190, 50);
+    opacity: .8;
+}
+
+.card {
     height: 200%;
     width: 100%;
     position: absolute;
     top: 0;
-    transition: 400ms;
+    transition: 0ms;
 }
 
-.faceup,
-.facedown {
+.flipup,
+.flipdown {
     height: 50%;
 }
 
-.facedown {
+.flipdown {
     background-image: url("yaho.png");
     background-color: #0a0101;
     height: 135px;
@@ -51,40 +97,39 @@ h1 {
     background-size: cover;
 }
 
-.flipped .face-container {
-    top: -100%;
+.flipped .card {
+    top: -101%;
 }
 
-/* colors */
-
-.color-0 {
-    background-color: aqua;
+.color0 {
+    background-color: rgb(167, 19, 19);
 }
 
-.color-1 {
-    background-color: bisque;
+.color1 {
+    background-color: rgb(243, 141, 16);
 }
 
-.color-2 {
-    background-color: blue;
+.color2 {
+    background-color: rgb(217, 230, 36);
 }
 
-.color-3 {
-    background-color: blueviolet;
+.color3 {
+    background-color: rgb(53, 177, 28);
 }
 
-.color-4 {
-    background-color: brown;
+.color4 {
+    background-color: rgb(29, 104, 175);
 }
 
-.color-5 {
-    background-color: cadetblue;
+.color5 {
+    background-color: rgb(149, 20, 224);
 }
 
-.color-6 {
-    background-color: chartreuse;
+.color6 {
+    background-color: rgb(231, 59, 180);
 }
 
-.color-7 {
-    background-color: coral;
+.color7 {
+    background-color: rgb(34, 194, 194);
 }
+
