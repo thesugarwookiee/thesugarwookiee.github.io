@@ -9,7 +9,7 @@ function generateHTMLForBoardSquares() {
 
             '<div class="square">\n' +
             '<div class="card">\n' +
-            '<div class="flipdown"></div>\n' +
+            '<div class="flipdown" onclick="counting()"></div>\n' +
             '<div class="flipup"></div>\n' +
             '</div>\n' +
             '</div>\n';
@@ -65,7 +65,7 @@ class BoardSquare {
         this.isMatched = true;
     }
 
-    //add the color to the square as you flip it
+    //add the color to the square
     setColor(color) {
         const flipUpElement = this.element.getElementsByClassName('flipup')[0];
 
@@ -74,6 +74,12 @@ class BoardSquare {
         this.color = color;
         flipUpElement.classList.add(color);
     }
+}
+
+//count turns taken
+var count = 0;
+function counting() {
+    document.getElementById("counter").innerHTML = Math.floor(++count/2);
 }
 
 //make pairs of colors
@@ -140,8 +146,9 @@ let firstFlipupSquare = null;
 function squareFlipped(square) {
     if (firstFlipupSquare === null) {
         firstFlipupSquare = square;
-        return
+        return;
     }
+
     if (firstFlipupSquare.color === square.color) {
         firstFlipupSquare.matchFound();
         square.matchFound();
@@ -156,8 +163,13 @@ function squareFlipped(square) {
         setTimeout(function () {
             a.reset();
             b.reset();
-        }, 600);
+        }, 400);
     }
+
+    // for (let numberCount = 0; firstFlipupSquare === null; numberCount++) {
+    //     const counter = document.getElementById('counter');
+    //     counter.innerHTML = numberCount;
+    // }
 }
 
 //reset the game
@@ -185,5 +197,9 @@ function resetGame() {
 
             square.setColor(newColor);
         }
-    }, 500);
+    }, 400);
+
+    //reset the counter
+    document.getElementById("counter").innerHTML = 0;
+    count = 0;
 }
