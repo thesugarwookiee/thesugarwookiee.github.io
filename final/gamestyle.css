@@ -90,8 +90,12 @@ h1 {
     border-radius: 1rem;
 }
 
-.flipdown:hover {
+.square:hover {
     border: 2px solid rgb(241, 190, 50);
+}
+
+.flipdown:hover {
+    
     opacity: .8;
 }
 
