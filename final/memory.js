@@ -63,6 +63,7 @@ class BoardSquare {
     matchFound() {
         this.isFlipUp = true;
         this.isMatched = true;
+        updateQuote();
     }
 
     //add the color to the square
