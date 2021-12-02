@@ -10,7 +10,7 @@ function generateHTMLForBoardSquares() {
             '<div class="square">\n' +
             '<div class="card">\n' +
             '<div class="flipdown" onclick="counting()"></div>\n' +
-            '<div class="flipup"><br>Jason plz come play with us</div>\n' +
+            '<div class="flipup"></div>\n' +
             '</div>\n' +
             '</div>\n';
 

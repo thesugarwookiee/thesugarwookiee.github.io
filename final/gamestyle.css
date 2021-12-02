@@ -38,7 +38,8 @@ body {
     padding: 1rem;
 }
 
-.score, #reset-button {
+.score,
+#reset-button {
     font-size: 1.5rem;
 }
 
@@ -60,7 +61,7 @@ body {
 #reset-button:hover {
     background-color: rgb(241, 190, 50);
     color: black;
-    
+
 }
 
 h1 {
@@ -121,42 +122,41 @@ h1 {
 }
 
 .color0 {
-    /* background-color: rgb(167, 19, 19); */
-    background-color: rgb(57, 63, 35);
+    background-color: rgb(167, 19, 19);
+
 }
 
 .color1 {
-    /* background-color: rgb(243, 141, 16); */
-    background-color: rgb(57, 63, 35);
+    background-color: rgb(243, 141, 16);
+
 }
 
 .color2 {
-    /* background-color: rgb(217, 230, 36); */
-    background-color: rgb(57, 63, 35);
+    background-color: rgb(217, 230, 36);
+
 }
 
 .color3 {
-    /* background-color: rgb(53, 177, 28); */
-    background-color: rgb(57, 63, 35);
+    background-color: rgb(53, 177, 28);
+
 }
 
 .color4 {
-    /* background-color: rgb(29, 104, 175); */
-    background-color: rgb(57, 63, 35);
+    background-color: rgb(29, 104, 175);
+
 }
 
 .color5 {
-    /* background-color: rgb(149, 20, 224); */
-    background-color: rgb(57, 63, 35);
+    background-color: rgb(149, 20, 224);
+
 }
 
 .color6 {
-    /* background-color: rgb(231, 59, 180); */
-    background-color: rgb(57, 63, 35);
+    background-color: rgb(231, 59, 180);
+
 }
 
 .color7 {
-    /* background-color: rgb(34, 194, 194); */
-    background-color: rgb(57, 63, 35);
-}
+    background-color: rgb(34, 194, 194);
 
+}
