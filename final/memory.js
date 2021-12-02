@@ -78,9 +78,10 @@ class BoardSquare {
 }
 
 //count turns taken
-var count = 0;
+var count = 8;
 function counting() {
-    document.getElementById("counter").innerHTML = Math.floor(++count/2);
+    // document.getElementById("counter").innerHTML = Math.floor(++count/2);
+    document.getElementById("counter").innerHTML = count;
 }
 
 //make pairs of colors
@@ -166,11 +167,6 @@ function squareFlipped(square) {
             b.reset();
         }, 400);
     }
-
-    // for (let numberCount = 0; firstFlipupSquare === null; numberCount++) {
-    //     const counter = document.getElementById('counter');
-    //     counter.innerHTML = numberCount;
-    // }
 }
 
 //reset the game
@@ -201,6 +197,6 @@ function resetGame() {
     }, 400);
 
     //reset the counter
-    document.getElementById("counter").innerHTML = 0;
+    document.getElementById("counter").innerHTML = 8;
     count = 0;
 }
