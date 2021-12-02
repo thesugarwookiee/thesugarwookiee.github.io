@@ -78,10 +78,9 @@ class BoardSquare {
 }
 
 //count turns taken
-var count = 8;
+var count = 0;
 function counting() {
-    // document.getElementById("counter").innerHTML = Math.floor(++count/2);
-    document.getElementById("counter").innerHTML = count;
+    document.getElementById("counter").innerHTML = Math.floor(++count/2);
 }
 
 //make pairs of colors
@@ -197,6 +196,6 @@ function resetGame() {
     }, 400);
 
     //reset the counter
-    document.getElementById("counter").innerHTML = 8;
+    document.getElementById("counter").innerHTML = 0;
     count = 0;
 }
