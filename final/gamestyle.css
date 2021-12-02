@@ -17,9 +17,12 @@ body {
 }
 
 .reward {
-    padding: 3rem 0 0 3rem;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr;
+    background-color: rgb(251, 255, 218);
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
 }
 
 #quote {
@@ -31,7 +34,6 @@ body {
     font-size: .75rem;
     font-style: italic;
     padding: 1rem;
-    
 }
 
 .score, #reset-button {
