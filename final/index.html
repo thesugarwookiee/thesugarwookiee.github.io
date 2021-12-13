@@ -15,14 +15,56 @@
     <hr>
     <h2>Final Project</h2>
     <ul>
-        <li>A Description of your app. Tell me what I should be looking for. I will not review the app until I have your functional description. </li>
-        <li>Tell me how to use your application.</li>
-        <li>A list of Itemized CSS features used</li>
-        <li>A description of your design process.</li>
-        <li>Did you alter your app from the original concept? How did you and why?</li>
-        <li>What problems did you have and how did you resolve them?</li>
-        <li>Describe your use of the coding topics from the course. How were they applied?</li>
-        <li><a href="memory.html">Click here</a></li>
+        <li>The application I've made it simple enough. I felt like my biggest struggle this semester was the javascript
+            itself, so I wanted to focus on that. So you have here a javascript based browser game! Sometimes it's
+            called memory, other times it's called concentration. Either way, everyone has played it before at one point
+            or another, but this time you can play it online and you don't have to shuffle the cards around yourself,
+            isn't that fun?<br><br>The other piece present here is the quote API I'm pulling from. Every time you load
+            the page, refresh the game, or make a match, the quote alongside the game will change. It's both a reward
+            for making a match and a distraction from remembering the cards you've already flipped.</li>
+        <li>There are 16 card tiles laid out in a grid. Click one, and it will turn over. Click another, and then
+            they'll both flip back over, unless it happens to be a match! If it's a match, they will remain flipped.
+            Once you've flipped over all the cards, you win! The counter in the corner keeps track of how many turns
+            you've taken, so try for a high score. The lowest I've seen from my friends who have tested it is 10, though
+            in theory if the stars align you could get 8... but that would be extreme luck.</li>
+        <li>CSS:
+            <ul>
+                <li>Plenty of grid! Grid used to lay out the page in its entirety, as well as to lay out the grid of
+                    cards!</li>
+                <li>Padding, padding everywhere... no one likes a website that's all shoved up against all the other
+                    elements!</li>
+                <li>Rounded borders on tiles and buttons, as well as careful use of solid borders to make subtle design
+                    elements.</li>
+                <li>Colors that aren't distracting from the game but look nice. Same with changing of font to a google
+                    font.</li>
+                <li>Made the quote section stand out without letting it shout. Aligned the author name to make it look
+                    neat instead of like I was just printing API info to the page.</li>
+                <li>On hover, the tiles recieve a yellow border. Also on hover, the tiles lose opacity, but ONLY on the
+                    unflipped "side".</li>
+                <li>Speaking of sides, used a transform to 'flip' the tiles. Slid the 'back' of the card out of the way
+                    to show the 'bottom' of the card, but made it instantaneous so you don't see the slide.</li>
+                <li>Also a delay on 'flipping' the tile back over once you've failed to make a match.</li>
+            </ul>
+        </li>
+        <li>For my design process, I started out thinking that I wanted to make a game with Javascript. From there I ran
+            through a few ideas, brainstormed. Landed on my current game and went from there. I first got the basics
+            laid out for the format and then worked on game logic. After I got game logic working, it was on to adding
+            the smaller things like the API and the counter. I just worked on it steadily when I could.</li>
+        <li>I definitely altered away from my original idea. I thought at first to make the backs of the cards pull from
+            an API, but I actually really struggled with how to do that. A lot of googling and I never found a way to
+            make it work, since the image as I have it pulls from the CSS and not the html. If there was a way I never
+            found it and eventually I decided there were better ways to get what I was after.</li>
+        <li>Problems were just the normal ones! Not really knowing how to do some things was hard. Finding an API that
+            would cooperate with me was one of them. I know how to pull an API but so many weren't great for what I was
+            after. Took me a while to figure out how to get the counter to work the way I wanted it to--math is hard!
+            Especially in code! But I'm very proud of my solution I ended up with.</li>
+        <li>As far as topics in the course go, I really felt like javascript was important for me to lean into here. It
+            was the part that I found the most frustrating throughout everything, and as it was the core of everything,
+            I wanted to use this project to prove to myself that I could make it work for me. It was applied throughout
+            the game and the logic of it. There were also event handlers to handle clicking and resets and loading and
+            all of that. From there the API was worked in to different events to randomize the quote, and the JSON
+            obviously to get the actual data from that.</li>
+        <li><a href="memory.html">Click here to play!</a></li>
     </ul>
 </body>
 
