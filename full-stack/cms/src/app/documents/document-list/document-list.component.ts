@@ -9,7 +9,7 @@ import { Document } from '../document.model';
 export class DocumentListComponent implements OnInit {
   @Output() selectedDocumentEvent = new EventEmitter<Document>();
   documents: Document[] = [
-    new Document(1, 'The Sparrow', 'Best Book Ever', '#', null),
+    new Document(1, 'The Sparrow', 'Best Book Ever, if you have not read it yet, why are you still here? go read it!', 'https://www.amazon.com/Sparrow-Novel-Book-ebook/dp/B000SEIFGO', null),
     new Document(2, 'Children of God', 'Also best book ever', '#', null),
     new Document(3, 'Tester', 'Best Test Ever', '#', null),
     new Document(4, 'Filler Space', 'This text belongs here!', '#', null),
