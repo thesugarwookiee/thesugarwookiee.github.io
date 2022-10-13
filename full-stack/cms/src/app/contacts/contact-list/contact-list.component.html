@@ -7,8 +7,7 @@
       </button>
     </div>
     <div class="panel-body col-xs-12">
-      <cms-contact-item *ngFor="let contactEl of contacts" [contact]="contactEl"
-        (click)="onSelected(contactEl)"></cms-contact-item>
+      <cms-contact-item *ngFor="let contact of contacts" [contact]="contact"></cms-contact-item>
     </div>
   </div>
 </div>
