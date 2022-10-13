@@ -1,5 +1,4 @@
 export class Contact {
-    static id: string;
     constructor(
         public id: string,
         public name: string,
