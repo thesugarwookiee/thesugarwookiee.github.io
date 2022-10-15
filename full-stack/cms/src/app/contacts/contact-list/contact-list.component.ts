@@ -6,7 +6,6 @@ import { ContactService } from '../contact.service';
   selector: 'cms-contact-list',
   templateUrl: './contact-list.component.html',
   styleUrls: ['./contact-list.component.css'],
-  // providers: [ContactService]
 })
 export class ContactListComponent implements OnInit {
 
@@ -18,8 +17,5 @@ export class ContactListComponent implements OnInit {
     this.contacts = this.contactService.getContacts();
   }
 
-  onSelected(contact: Contact) {
-    this.contactService.contactSelectedEvent.emit(contact);
-  }
 }
 
