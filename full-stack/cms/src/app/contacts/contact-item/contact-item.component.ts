@@ -14,9 +14,5 @@ export class ContactItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  onSelectedContact() {
-    this.contactService.contactSelectedEvent.emit(this.contact);
-  }
 }
 
