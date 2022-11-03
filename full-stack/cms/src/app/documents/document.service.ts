@@ -60,7 +60,7 @@ export class DocumentService {
     }
     this.maxDocumentId++;
     newDocument.id = this.maxDocumentId + "";
-    this.documents.push();
+    this.documents.push(newDocument);
     this.documentListChangedEvent.next(this.documents.slice());
   }
 
