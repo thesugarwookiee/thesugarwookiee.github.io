@@ -60,7 +60,7 @@ export class ContactService {
         }
         this.maxContactId++;
         newContact.id = this.maxContactId + "";
-        this.contacts.push();
+        this.contacts.push(newContact);
         this.contactListChangedEvent.next(this.contacts.slice());
     }
 

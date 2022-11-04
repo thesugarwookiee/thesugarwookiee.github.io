@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Document } from '../document.model';
 import { DocumentService } from '../document.service';
@@ -10,7 +10,6 @@ import { DocumentService } from '../document.service';
   styleUrls: ['./document-edit.component.css']
 })
 export class DocumentEditComponent implements OnInit {
-  editForm: FormGroup;
   originalDocument: Document;
   document: Document;
   editMode: boolean = false;
