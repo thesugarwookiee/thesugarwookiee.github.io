@@ -10,8 +10,13 @@ import { ContactService } from '../contact.service';
 export class ContactListComponent implements OnInit {
 
   contacts: Contact[] = [];
+  term: string;
 
   constructor(private contactService: ContactService) { }
+
+  search(value: string) {
+    this.term = value;
+  }
 
   ngOnInit() {
     this.contacts = this.contactService.getContacts();
