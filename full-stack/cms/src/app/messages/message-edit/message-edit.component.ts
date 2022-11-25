@@ -8,20 +8,20 @@ import { MessageService } from '../message.service';
   styleUrls: ['./message-edit.component.css']
 })
 export class MessageEditComponent implements OnInit {
-  currentSender: string = '7';
+  currentSender: string = '101';
   @ViewChild('subject', { static: true }) subjectRef: ElementRef;
   @ViewChild('msgText', { static: true }) msgTextRef: ElementRef;
   @Output() addMessageEvent = new EventEmitter<Message>();
 
   constructor(private messageService: MessageService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
  
   onSendMessage() {
-    let currentSubject = this.subjectRef.nativeElement.value;
-    let currentMsg = this.msgTextRef.nativeElement.value;
-    const newMessage = new Message('1', currentSubject, currentMsg, this.currentSender);
+    const currentSubject = this.subjectRef.nativeElement.value;
+    const currentMsg = this.msgTextRef.nativeElement.value;
+    const newMessage = new Message('101', currentSubject, currentMsg, '7');
     this.messageService.addMessage(newMessage);
   }
 
