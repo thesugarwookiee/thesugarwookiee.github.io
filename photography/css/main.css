@@ -189,34 +189,3 @@ input:focus,
 textarea:focus {
     background-color: var(--secondary-color);
 }
-
-.form {
-    grid-column: 1/2;
-}
-
-.patron {
-    grid-column: 2/3;
-}
-
-.group {
-    grid-column: 3/4;
-}
-
-#patron {
-    margin-left: 18px;
-    border-radius: .2rem;
-}
-
-.schedwrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: .75rem;
-}
-
-.schedwrap img {
-    width: 150px;
-}
-
-.schedwrap p {
-    font-size: .75rem;
-}
