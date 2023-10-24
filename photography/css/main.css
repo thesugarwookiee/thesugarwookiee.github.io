@@ -1,14 +1,16 @@
 :root {
-    --primary-color: #440a0a;
-    --secondary-color: #f5f3de;
-    --accent1-color: #161106;
-    --accent2-color: #c0860a;
-    --heading-font: 'Alice', 'Times New Roman', serif;
-    --paragraph-font: 'Lato', Helvetica, sans-serif;
+    --dark-color: #2b042e;
+    --light-color: #f2f1eb;
+    --accent1-color: rgba(149, 217, 175, .5);
+    --accent2-color: #ffdb8d;
+    --accent3-color: #d0433b;
+    --fancy-font: 'Allura', serif;
+    --heading-font: 'Libre Baskerville', 'Times New Roman', serif;
+    --paragraph-font: 'Quicksand', Helvetica, sans-serif;
 }
 
 html {
-    background-color: var(--accent1-color);
+    background-color: var(--light-color);
 }
 
 body {
@@ -16,68 +18,40 @@ body {
     margin: 0;
 }
 
-h1,
+h1 {
+    font-family: var(--fancy-font);
+    color: var(--accent3-color);
+    font-size: 4rem;
+    padding: 3rem;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
     font-family: var(--heading-font);
-    color: var(--accent1-color);
-}
-
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-}
-
-h1 {
-    color: var(--secondary-color);
-    align-items: end;
-    text-align: right;
-    font-size: 3.3rem;
-    padding-right: 1.5em;
+    color: var(--accent3-color);
 }
 
 header img {
     display: block;
 }
 
-.banner {
-    grid-column: 1/3;
-}
-
-.logo {
-    margin-left: 4em;
-    margin-top: 1em;
-    border-radius: 20px;
-}
-
-p {
-    font-family: var(--paragraph-font);
-    color: var(--primary-color);
-    padding: 5px 15px;
-}
-
-main {
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: var(--secondary-color);
-    padding: 2em;
-    padding-bottom: 1em;
-}
-
 nav {
-    padding-left: 15%;
     background-color: var(--accent1-color);
-    grid-column: 1/4;
+    padding: 10px;
+    font-family: var(--paragraph-font);
+    position: sticky;
+    z-index: 2;
+    top: 0;
 }
+
 
 nav>ul {
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -88,22 +62,44 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color: var(--secondary-color);
+    color: var(--accent3-color);
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: var(--dark-color);
     background-color: var(--accent2-color);
 }
 
-.active {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+nav a.active {
+    color: var(--dark-color);
+    background-color: var(--accent2-color);
+    font-weight: bold;
 }
 
-.homewrap {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+.logo {
+    margin-left: 4em;
+    margin-top: 1em;
+    border-radius: 20px;
+    max-height: 100px;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--dark-color);
+    padding: 5px 15px;
+}
+
+main {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 2em;
+    padding-bottom: 1em;
+}
+
+.hero {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
 }
 
 footer {
@@ -121,24 +117,13 @@ footer {
 }
 
 .social img {
-    opacity: 75%;
+    max-height: 30px;
 }
 
 .tiny {
     font-size: .75rem;
     color: var(--secondary-color);
     padding-left: 215px;
-}
-
-.card {
-    color: var(--accent2-color);
-    max-width: 250px;
-    border-radius: 3px;
-    background-color: var(--accent1-color);
-    font-family: Helvetica, sans-serif;
-    overflow: hidden;
-    font-size: 15px;
-    grid-row: 1/3;
 }
 
 button {
@@ -167,7 +152,7 @@ button {
 #mainbottom {
     grid-column: 2/3;
     grid-row: 3/4;
-   ;
+    ;
 }
 
 .formwrap {
@@ -183,14 +168,17 @@ form {
     padding-bottom: 2rem;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     border: 1px solid var(--accent2-color);
     border-radius: .3rem;
     padding: .3rem;
     float: right;
 }
 
-.right, .formbutton {
+.right,
+.formbutton {
     float: right;
 }
 
@@ -201,7 +189,8 @@ input, select, textarea {
     border-radius: .3rem;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     background-color: var(--secondary-color);
 }
 
@@ -219,7 +208,7 @@ input:focus, textarea:focus {
 
 #patron {
     margin-left: 18px;
-    border-radius: .2rem;   
+    border-radius: .2rem;
 }
 
 .schedwrap {
