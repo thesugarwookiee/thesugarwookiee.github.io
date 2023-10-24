@@ -108,19 +108,18 @@ main {
 footer {
     margin: 0 auto;
     padding: 1em 3em;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--dark-color);
+    color: var(--accent2-color);
 }
 
 .social {
     padding-left: 215px;
     width: 20%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .social img {
     max-height: 30px;
+    padding: 5px;
 }
 
 .tiny {
