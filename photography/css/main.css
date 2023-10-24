@@ -23,6 +23,7 @@ h1 {
     color: var(--accent3-color);
     font-size: 4rem;
     padding: 3rem;
+    padding-left: 7rem;
 }
 
 h2,
