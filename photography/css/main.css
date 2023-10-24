@@ -2,7 +2,7 @@
     --dark-color: #2b042e;
     --light-color: #f2f1eb;
     --accent1-color: rgba(149, 217, 175, .5);
-    --accent2-color: #ffdb8d;
+    --accent2-color: rgba(255, 219, 141, .75);
     --accent3-color: #d0433b;
     --fancy-font: 'Allura', serif;
     --heading-font: 'Libre Baskerville', 'Times New Roman', serif;
@@ -107,9 +107,9 @@ main {
 
 footer {
     margin: 0 auto;
-    padding: 1em 3em;
-    background-color: var(--dark-color);
-    color: var(--accent2-color);
+    padding: .25em 3em;
+    background-color: var(--accent2-color);
+    color: var(--dark-color);
 }
 
 .social {
