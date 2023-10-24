@@ -90,10 +90,13 @@ p {
 }
 
 main {
-    max-width: 1060px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2em;
+    padding-top: 3em;
     padding-bottom: 1em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .hero {
@@ -113,7 +116,7 @@ footer {
     padding-left: 215px;
     width: 20%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .social img {
@@ -147,12 +150,6 @@ button {
 .ticketButton {
     border-radius: 0 3px 3px 0;
     border-left: 0;
-}
-
-#mainbottom {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    ;
 }
 
 .formwrap {
