@@ -2,12 +2,15 @@
     --dark-color: #2b042e;
     --light-color: #f2f1eb;
     --accent1-color: rgba(149, 217, 175, .5);
-    --accent2-color: rgba(255, 219, 141, .75);
-    --accent3-color: #d0433b;
+    --accent1-alt: rgb(55, 112, 77);
+    --accent2-color: rgba(255, 219, 141, .5);
+    --accent3-color: #e45b40;
     --fancy-font: 'Allura', serif;
     --heading-font: 'Libre Baskerville', 'Times New Roman', serif;
     --paragraph-font: 'Quicksand', Helvetica, sans-serif;
 }
+
+
 
 html {
     background-color: var(--light-color);
@@ -18,21 +21,33 @@ body {
     margin: 0;
 }
 
+main {
+    margin: 0 auto;
+    padding: 1em;
+}
+
 h1 {
     font-family: var(--fancy-font);
     color: var(--accent3-color);
-    font-size: 4rem;
-    padding: 3rem;
-    padding-left: 7rem;
+    font-size: 2.5rem;
+    padding: 2rem;
 }
 
 h2,
 h3,
-h4,
 h5,
 h6 {
     font-family: var(--heading-font);
     color: var(--accent3-color);
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-family: var(--heading-font);
+    color: var(--accent1-alt);
 }
 
 header img {
@@ -41,7 +56,7 @@ header img {
 
 nav {
     background-color: var(--accent1-color);
-    padding: 10px;
+    padding: 2px;
     font-family: var(--paragraph-font);
     position: sticky;
     z-index: 2;
@@ -69,12 +84,27 @@ nav a:visited {
 nav a:hover {
     color: var(--dark-color);
     background-color: var(--accent2-color);
+    padding: 2em 1.5em;
 }
 
 nav a.active {
     color: var(--dark-color);
     background-color: var(--accent2-color);
     font-weight: bold;
+    padding: 2em 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent3-color);
+}
+
+.rightward {
+    text-align: right;
+}
+
+.leftbump {
+    padding-left: 1rem;
 }
 
 .logo {
@@ -84,21 +114,11 @@ nav a.active {
     max-height: 100px;
 }
 
-p {
+p,
+li {
     font-family: var(--paragraph-font);
     color: var(--dark-color);
     padding: 5px 15px;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2em;
-    padding-top: 3em;
-    padding-bottom: 1em;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 1rem;
 }
 
 .hero {
@@ -114,10 +134,6 @@ footer {
     color: var(--dark-color);
 }
 
-.social {
-    padding-left: 215px;
-    width: 20%;
-}
 
 .social img {
     max-height: 30px;
@@ -127,67 +143,32 @@ footer {
 .tiny {
     font-size: .75rem;
     color: var(--secondary-color);
-    padding-left: 215px;
 }
 
-button {
-    border-color: var(--accent1-color);
-    border-style: solid;
-    border-width: 1.5px;
-    font-family: Helvetica, sans-serif;
-    background: var(--accent2-color);
-    color: var(--accent1-color);
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: .85rem;
-    float: left;
-}
+@media (min-width: 940px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2em;
+        padding-top: 4em;
+        padding-bottom: 1em;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 1rem;
+    }
 
-.contactButton {
-    margin-left: 15px;
-    border-radius: 3px 0 0 3px;
-}
+    h1 {
+        font-size: 4rem;
+        padding: 3rem;
+        padding-left: 7rem;
+    }
 
-.ticketButton {
-    border-radius: 0 3px 3px 0;
-    border-left: 0;
-}
+    .social {
+        padding-left: 215px;
+        width: 20%;
+    }
 
-.formwrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-}
-
-form {
-    background: white;
-    border: 1px solid var(--accent2-color);
-    border-radius: 1rem;
-    padding-bottom: 2rem;
-}
-
-input,
-select,
-textarea {
-    border: 1px solid var(--accent2-color);
-    border-radius: .3rem;
-    padding: .3rem;
-    float: right;
-}
-
-.right,
-.formbutton {
-    float: right;
-}
-
-.formbutton {
-    margin-right: 20px;
-    color: var(--secondary-color);
-    background-color: var(--accent1-color);
-    border-radius: .3rem;
-}
-
-input:focus,
-textarea:focus {
-    background-color: var(--secondary-color);
+    .tiny {
+        padding-left: 215px;
+    }
 }
