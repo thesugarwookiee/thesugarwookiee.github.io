@@ -12,12 +12,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <nav>
-        <ul>
+        <ul class="navigation">
+            <li><a class="toggle" href="#">☰ Menu</a></li>
             <li><a class="active" href="#">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="reviews.html">Reviews</a></li>
@@ -26,7 +28,7 @@
     </nav>
     <header>
         <h1>Rainbow Lane<br>Photography</h1>
-        <div class="banner"><img src="images/bigbanner.png" alt="wedding flowers" class="hero">
+        <div class="banner"><img src="images/bigbanner.png" alt="wedding flowers" class="hero responsive">
         </div>
     </header>
     <main>
@@ -90,7 +92,7 @@
             <p class="rightward">- V. Banner<br>
                 <a href="#">see more...</a>
             </p>
-            
+
         </section>
     </main>
     <footer>
@@ -100,7 +102,9 @@
         </div>
         <p class="footer tiny">Copyright &copy; 2023 Rainbow Lane Photography | All Rights Reserved | Privacy and Cookie
             Statement</p>
+        <p class="footer tiny">Contact  |  Admin Login</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
