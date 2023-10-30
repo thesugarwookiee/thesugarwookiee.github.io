@@ -31,7 +31,7 @@ h1 {
     font-family: var(--fancy-font);
     color: var(--accent3-color);
     font-size: 2.5rem;
-    padding: 2.25rem;
+    padding-left: 1rem;
 }
 
 h2,
@@ -39,7 +39,8 @@ h3,
 h5,
 h6 {
     font-family: var(--heading-font);
-    color: var(--accent3-color);
+    color: var(--accent1-alt);
+    padding: .25rem;
 }
 
 h2 {
@@ -51,13 +52,6 @@ h4 {
     color: var(--accent1-alt);
 }
 
-/*keep the hero image up top and beneath header items*/
-.hero {
-    position: absolute;
-    top: 0px;
-    z-index: -1;
-}
-
 .responsive {
     width: 100%;
     height: auto;
@@ -67,7 +61,9 @@ h4 {
 nav {
     text-align: center;
     background-color: var(--accent1-color);
+    backdrop-filter: blur(6px);
     padding: 1rem;
+    position: sticky;
     font-family: var(--paragraph-font);
     z-index: 2;
     top: 0;
@@ -127,10 +123,20 @@ li {
     text-align: right;
 }
 
+.red {
+    color: var(--accent3-color);
+}
+
 /*for images who need a little alignment*/
 .leftbump {
     padding-left: 1rem;
 }
+
+/*for the lists*/
+li::marker {
+    content: '✿';
+    color: var(--accent3-color);
+  }
 
 /*footer nonsense*/
 footer {
@@ -152,9 +158,16 @@ footer {
 
 /*desktop version changes*/
 @media (min-width: 940px) {
+
+    /*keep the hero image up top and beneath header items*/
+    .hero {
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+    }
+
     nav {
         padding: .75rem;
-        position: sticky;
     }
 
     nav ul {
@@ -163,7 +176,7 @@ footer {
         justify-content: flex-end;
         padding-right: 8rem;
     }
-    
+
     nav a {
         padding: 2em 1.25em;
     }
@@ -202,7 +215,6 @@ footer {
 
     h1 {
         font-size: 4rem;
-        padding: 3rem;
         padding-left: 7rem;
     }
 
