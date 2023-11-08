@@ -1,10 +1,10 @@
 :root {
-    --dark-color: #2b042e;
+    --dark-color: #200523;
     --light-color: #f2f1eb;
     --accent1-color: rgba(149, 217, 175, .5);
     --accent1-alt: rgb(55, 112, 77);
     --accent2-color: rgba(255, 219, 141, .5);
-    --accent3-color: #e45b40;
+    --accent3-color: #cd452d;
     --fancy-font: 'Allura', serif;
     --heading-font: 'Libre Baskerville', 'Times New Roman', serif;
     --paragraph-font: 'Quicksand', Helvetica, sans-serif;
@@ -39,7 +39,7 @@ h3,
 h5,
 h6 {
     font-family: var(--heading-font);
-    color: var(--accent1-alt);
+    color: var(--dark-color);
     padding: .25rem;
 }
 
@@ -113,18 +113,38 @@ a {
     color: var(--accent1-alt);
 }
 
-p,
-li {
-    padding: 5px 15px;
+p {
+    padding: 5px;
 }
+
+.portrait {
+    max-width: 200px;
+    float: left; 
+    padding-right: 15px;
+}
+
+.consistentsize {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
 
 /*for text that needs a little alignment*/
 .rightward {
     text-align: right;
 }
 
-.red {
-    color: var(--accent3-color);
+.review {
+    padding: 0 1rem;
+    font-style: italic;
+    border-left: 2px solid var(--accent1-alt);
+}
+
+.reviewname {
+    font-family: var(--fancy-font);
+    font-size: 1.5rem;
+    color: var(--accent1-alt);
 }
 
 /*for images who need a little alignment*/
@@ -132,11 +152,39 @@ li {
     padding-left: 1rem;
 }
 
-/*for the lists*/
-li::marker {
-    content: '✿';
-    color: var(--accent3-color);
-  }
+/*for the collapse section*/
+.collapsible {
+    background-color: var(--light-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: var(--heading-font);
+    color: var(--accent1-alt);
+}
+
+.activelist,
+.collapsible:hover {
+    background-color: var(--accent2-color);
+}
+
+.collapsible:after {
+    content: '     ►';
+    color: var(--accent1-alt);
+    font-size: 20px;
+}
+
+.activelist:after {
+    content: "     ▼";
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
 
 /*footer nonsense*/
 footer {
@@ -146,9 +194,13 @@ footer {
     color: var(--dark-color);
 }
 
+.social {
+    float: right;
+}
+
 .social img {
     max-height: 30px;
-    padding: 5px;
+    padding: 0 5px;
 }
 
 .tiny {
@@ -189,8 +241,9 @@ footer {
     nav a.active {
         color: var(--dark-color);
         background-color: var(--accent2-color);
-        font-weight: bold;
+        font-weight: bolder;
         padding: 2em 1.5em;
+        text-decoration: underline;
     }
 
     .navigation li {
