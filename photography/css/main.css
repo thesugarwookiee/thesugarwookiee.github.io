@@ -119,7 +119,7 @@ p {
 
 .portrait {
     max-width: 200px;
-    float: left; 
+    float: left;
     padding-right: 15px;
 }
 
@@ -216,6 +216,11 @@ footer {
         position: absolute;
         top: 0px;
         z-index: -1;
+    }
+
+    .nothome {
+        max-height: 300px;
+        object-fit: cover;
     }
 
     nav {
