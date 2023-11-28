@@ -275,10 +275,10 @@ footer {
         grid-template-columns: 2fr 1fr;
     }
 
-    .twocol {
+    .threecol {
         display: grid;
         grid-gap: 1rem;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     h1 {
