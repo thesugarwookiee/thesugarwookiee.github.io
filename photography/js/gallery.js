@@ -1,3 +1,4 @@
+//slider gallery
 "use strict";
 const slides = document.querySelectorAll(".slide");
 
