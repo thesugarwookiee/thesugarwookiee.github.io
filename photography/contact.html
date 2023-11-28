@@ -37,26 +37,34 @@
         <form action="action_page.php">
 
             <label for="fname">Name</label>
-            <input type="text" id="name" name="name" placeholder="Full name">
+            <input type="text" id="name" name="name" placeholder="Full name" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="email" id="email" name="email" placeholder="Email" required>
 
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="phone" placeholder="Please include area code"
                 pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$">
 
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
+            <label for="pref">Preferred contact</label>
+            <select id="pref" name="pref">
+                <option value="email">Email</option>
+                <option value="phonecall">Phone Call</option>
+                <option value="textmsg">Text Message</option>
+            </select>
+
+            <label for="subject">Subject of inquiry</label>
+            <select id="subject" name="subject">
+                <option value="quote">Quote Request</option>
+                <option value="availability">Availability Questions</option>
+                <option value="inquiry">General Inquiry</option>
+                <option value="other">Other</option>
             </select>
 
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject"
                 placeholder="If requesting a quote, please include as much relevant info as possible, including dates, location, etc..."
-                style="height:200px"></textarea>
+                required></textarea>
 
             <input type="submit" value="Submit">
 

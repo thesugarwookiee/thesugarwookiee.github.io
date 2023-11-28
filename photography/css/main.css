@@ -276,6 +276,10 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
+textarea {
+    height: 200px;
+}
+
 /*desktop version changes*/
 @media (min-width: 940px) {
 
