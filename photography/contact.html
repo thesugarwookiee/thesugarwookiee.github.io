@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -37,7 +37,7 @@
         <p>This is a form! Fill it out and I'll know about it!</p>
         <form action="action_page.php">
 
-            <label for="fname">Name</label>
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="First and last" required>
 
             <label for="email">Email</label>
@@ -49,6 +49,7 @@
 
             <label for="pref">Preferred contact</label>
             <select id="pref" name="pref" required>
+                <option value="">Select...</option>
                 <option value="email">Email</option>
                 <option value="phonecall">Phone Call</option>
                 <option value="textmsg">Text Message</option>
@@ -56,6 +57,7 @@
 
             <label for="subject">Subject of inquiry</label>
             <select id="subject" name="subject" required>
+                <option value="">Select...</option>
                 <option value="quote">Quote Request</option>
                 <option value="availability">Availability Questions</option>
                 <option value="inquiry">General Inquiry</option>

@@ -407,7 +407,6 @@ textarea {
         padding: 10px;
         border: none;
         border-radius: 10%;
-        z-index: 10px;
         cursor: pointer;
         background-color: var(--accent1-color);
         font-size: 18px;
