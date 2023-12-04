@@ -240,14 +240,19 @@ form {
 input,
 select,
 textarea {
+    background-color: white;
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--accent1-alt);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: none;
+}
+
+option {
+    background-color: white;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -276,6 +281,10 @@ input[type=submit]:hover {
 textarea {
     height: 200px;
 }
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid var(--accent3-color);
+  }
 
 /*desktop version changes*/
 @media (min-width: 940px) {

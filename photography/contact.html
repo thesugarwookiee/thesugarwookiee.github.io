@@ -35,10 +35,10 @@
     <main>
         <h2>Contact</h2>
         <p>This is a form! Fill it out and I'll know about it!</p>
-        <form action="action_page.php">
+        <form action="">
 
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="First and last" required>
+            <input type="text" id="name" name="name" placeholder="First and last" required pattern="^[^0-9]+$">
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="example@domain.com" required>
